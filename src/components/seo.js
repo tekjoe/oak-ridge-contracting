@@ -68,7 +68,12 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    >
+      <style>
+        @import
+        url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap');
+      </style>
+    </Helmet>
   )
 }
 
