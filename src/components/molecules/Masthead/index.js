@@ -3,27 +3,34 @@ import styled from "styled-components"
 import Image from "../../atoms/Image"
 
 const Masthead = styled.section`
-  height: 800px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 1fr);
   position: relative;
+  @media (min-width: 768px) {
+    grid-template-rows: repeat(12, 1fr);
+    height: 800px;
+  }
+`
+
+Masthead.Image = styled.div`
+  grid-column: 1/-1;
+  @media (min-width: 768px) {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+  }
 `
 
 Masthead.CTA = styled.div`
   background: hsl(230, 21%, 23%);
-  z-index: 10;
-  padding: 4rem;
-  position: absolute;
-  width: 50%;
-  bottom: -2rem;
-  right: 0;
+  padding: 2rem;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  grid-column: 1/-1;
   h1 {
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 400;
     color: white;
     border-bottom: 2px solid #30da92;
@@ -32,15 +39,31 @@ Masthead.CTA = styled.div`
     margin-bottom: 1rem;
   }
   h2 {
-    font-size: 4rem;
+    font-size: 2rem;
     color: white;
+  }
+  @media (min-width: 768px) {
+    padding: 4rem;
+    position: absolute;
+    width: 50%;
+    bottom: -2rem;
+    right: 0;
+    z-index: 10;
+    h1 {
+      font-size: 1.25rem;
+    }
+    h2 {
+      font-size: 4rem;
+    }
   }
 `
 
 export default () => {
   return (
     <Masthead>
-      <Image style={{ gridColumn: "1/-1", gridRow: "1/-1" }} />
+      <Masthead.Image>
+        <Image style={{ height: "100%" }} />
+      </Masthead.Image>
       <Masthead.CTA>
         <h1>Oak Ridge Contracting</h1>
         <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>

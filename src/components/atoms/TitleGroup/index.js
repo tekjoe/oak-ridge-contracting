@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const TitleGroup = styled.div`
   h3 {
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 400;
     padding-bottom: 0.25rem;
     margin-bottom: 0.5rem;
@@ -11,8 +11,17 @@ const TitleGroup = styled.div`
     display: inline-block;
   }
   h2 {
-    font-size: 4rem;
-    margin-bottom: 2rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 4rem;
+      margin-bottom: 2rem;
+    }
+    h3 {
+      font-size: 2rem;
+    }
   }
 `
 

@@ -7,7 +7,10 @@ import Card from "../../molecules/Card"
 const Social = styled.section`
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  margin: 10rem 0;
+  margin: 3rem 1rem;
+  @media (min-width: 768px) {
+    margin: 8rem 0;
+  }
 `
 
 Social.Body = styled.div`
@@ -16,23 +19,32 @@ Social.Body = styled.div`
 `
 
 Social.Group = styled.div`
-  grid-column: 3 / span 8;
+  grid-column: 1 / -1;
   display: flex;
+  flex-direction: column;
+  @media (min-width: 768px) {
+    grid-column: 3 / span 8;
+    flex-direction: row;
+  }
 `
 
 const CTA = styled.button`
-  grid-column: 6 / span 2;
+  grid-column: 4 / span 6;
   background: #3088da;
   text-transform: uppercase;
   border: none;
   padding: 1rem;
-  font-size: 1.25rem;
+  font-size: 0.8rem;
   color: white;
   font-weight: bold;
   cursor: pointer;
   font-family: "Barlow";
   letter-spacing: 0.05rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
+  @media (min-width: 768px) {
+    grid-column: 6 / span 2;
+    font-size: 1.25rem;
+  }
 `
 
 export default () => {

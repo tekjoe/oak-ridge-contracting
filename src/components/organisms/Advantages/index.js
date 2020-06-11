@@ -3,11 +3,14 @@ import styled from "styled-components"
 import TitleGroup from "../../atoms/TitleGroup"
 
 const Advantages = styled.section`
-  padding: 6rem 1rem;
+  padding: 3rem 1rem;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 1rem;
   background: #f0f0f0;
+  @media (min-width: 768px) {
+    padding: 6rem 1rem;
+  }
 `
 
 Advantages.Body = styled.div`
@@ -21,19 +24,30 @@ const Advantage = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 33%;
-  padding: 1rem;
+  padding: 0.25rem;
+  h4 {
+    font-size: 1.25rem;
+  }
   & > * {
     margin-bottom: 1rem;
   }
   &:nth-of-type(2n) {
     margin: 0 1rem;
   }
+  @media (min-width: 768px) {
+    width: 33%;
+    padding: 1rem;
+  }
 `
 
 const AdvantageGroup = styled.div`
-  grid-column: 4 / span 6;
+  grid-column: 1 / -1;
   display: flex;
+  flex-direction: column;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    grid-column: 4 / span 6;
+  }
 `
 
 const SVGC = styled.div`

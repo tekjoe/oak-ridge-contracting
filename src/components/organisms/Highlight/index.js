@@ -9,29 +9,41 @@ const Highlight = styled.section`
 `
 
 Highlight.Body = styled.div`
-  grid-column: ${({ reverse }) => (reverse ? " span 6" : "7 / span 6")};
+  grid-column: 1/-1;
   color: white;
   display: flex;
   flex-direction: column;
-  padding: 0 6rem;
+  padding: 3rem 2rem;
   justify-content: center;
   background: hsl(230, 21%, 23%);
-  height: calc(100% - 2rem);
   grid-row: ${({ reverse }) => (reverse ? "1" : "auto")};
   p {
     color: white;
-    padding-right: 8rem;
+  }
+  @media (min-width: 768px) {
+    height: calc(100% - 2rem);
+    grid-column: ${({ reverse }) => (reverse ? " span 6" : "7 / span 6")};
+    padding: 0 6rem;
+    p {
+      padding-right: 8rem;
+    }
+  }
+`
+
+Highlight.Image = styled.div`
+  grid-column: 1/-1;
+  @media (min-width: 768px) {
+    grid-column: ${({ reverse }) => (reverse ? "7 / span 6" : "span 6")};
   }
 `
 
 export default ({ reverse }) => {
   return (
     <Highlight>
-      <Image
-        style={
-          reverse ? { gridColumn: "7 / span 6" } : { gridColumn: "span 6" }
-        }
-      />
+      <Highlight.Image>
+        <Image style={{ height: "100%" }} />
+      </Highlight.Image>
+
       <Highlight.Body reverse={reverse}>
         <TitleGroup>
           <h3>Another Title</h3>
