@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Oak Ridge Contracting`,
-    description: `REsidential & Commercial Remodeling`,
+    description: `Residential & Commercial Remodeling`,
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -15,6 +15,12 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        displayName: true,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

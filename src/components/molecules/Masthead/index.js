@@ -41,9 +41,13 @@ Masthead.CTA = styled.div`
   h2 {
     font-size: 2rem;
     color: white;
+    margin-bottom: 1rem;
+  }
+  p {
+    color: #b5b7c3;
   }
   @media (min-width: 768px) {
-    padding: 4rem;
+    padding: 4rem 6rem;
     position: absolute;
     width: 50%;
     bottom: -2rem;
@@ -53,7 +57,7 @@ Masthead.CTA = styled.div`
       font-size: 1.25rem;
     }
     h2 {
-      font-size: 4rem;
+      font-size: 3rem;
     }
   }
 `
@@ -67,6 +71,11 @@ export default () => {
       <Masthead.CTA>
         <h1>Oak Ridge Contracting</h1>
         <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora
+          reprehenderit culpa aliquam facilis velit molestiae eveniet porro est
+          dolores sint nostrum ab quidem, rerum.
+        </p>
       </Masthead.CTA>
     </Masthead>
   )

@@ -5,6 +5,7 @@ import { lightTheme } from "../utils/theme"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import Footer from "./organisms/Footer"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -22,6 +23,7 @@ const Layout = ({ children }) => {
       <GlobalStyle />
       <Header siteTitle={data.site.siteMetadata.title} />
       <main>{children}</main>
+      <Footer />
     </ThemeProvider>
   )
 }

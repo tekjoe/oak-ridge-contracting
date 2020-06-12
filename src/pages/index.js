@@ -7,7 +7,6 @@ import Projects from "../components/molecules/Projects"
 import Advantages from "../components/organisms/Advantages"
 import Highlight from "../components/organisms/Highlight"
 import Social from "../components/organisms/Social"
-import Footer from "../components/organisms/Footer"
 
 const IndexPage = () => (
   <Layout>
@@ -18,7 +17,6 @@ const IndexPage = () => (
     <Highlight reverse={false} />
     <Social />
     <Highlight reverse={true} />
-    <Footer />
   </Layout>
 )
 
