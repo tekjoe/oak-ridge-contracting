@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import TitleGroup from "../../atoms/TitleGroup"
+import Button from "../../atoms/Button"
 import Image from "../../atoms/Image"
 
 const Highlight = styled.section`
@@ -13,17 +14,19 @@ Highlight.Body = styled.div`
   color: white;
   display: flex;
   flex-direction: column;
-  padding: 3rem 2rem;
   justify-content: center;
+  align-items: flex-start;
+  padding: 3rem 2rem;
   background: hsl(230, 21%, 23%);
   grid-row: ${({ reverse }) => (reverse ? "1" : "auto")};
   p {
     color: white;
+    margin-bottom: 2rem;
   }
   @media (min-width: 768px) {
     height: calc(100% - 2rem);
     grid-column: ${({ reverse }) => (reverse ? " span 6" : "7 / span 6")};
-    padding: 0 6rem;
+    padding: 6rem;
     p {
       padding-right: 8rem;
     }
@@ -43,7 +46,6 @@ export default ({ reverse }) => {
       <Highlight.Image>
         <Image style={{ height: "100%" }} />
       </Highlight.Image>
-
       <Highlight.Body reverse={reverse}>
         <TitleGroup>
           <h3>Another Title</h3>
@@ -54,6 +56,7 @@ export default ({ reverse }) => {
           rhoncus eu eget vitae in vitae. Et fermentum pharetra, cras
           condimentum quis.
         </p>
+        <Button variant="inverse">Contact Us</Button>
       </Highlight.Body>
     </Highlight>
   )

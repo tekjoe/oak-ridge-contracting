@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const TitleGroup = styled.div`
   h3 {
-    font-size: 1rem;
+    font-size: ${({ theme }) => theme.typography.paragraph};
     font-weight: 400;
     padding-bottom: 0.25rem;
     margin-bottom: 0.5rem;
@@ -16,11 +16,11 @@ const TitleGroup = styled.div`
   }
   @media (min-width: 768px) {
     h2 {
-      font-size: 4rem;
+      font-size: ${({ theme }) => theme.typography.h2};
       margin-bottom: 2rem;
     }
     h3 {
-      font-size: 2rem;
+      font-size: ${({ theme }) => theme.typography.h4};
     }
   }
 `

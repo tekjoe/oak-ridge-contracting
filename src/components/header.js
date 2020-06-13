@@ -49,6 +49,14 @@ const Nav = styled.nav`
   }
 `
 
+Nav.Link = styled(Link)`
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    color: #3088da;
+  }
+`
+
 const CTA = styled.div`
   margin-left: auto;
   display: none;
@@ -81,9 +89,13 @@ export default ({ siteTitle }) => (
     </Logo>
     <Nav>
       <ul>
-        <li>Home</li>
+        <li>
+          <Nav.Link to="/">Home</Nav.Link>
+        </li>
         <li>Services</li>
-        <li>About</li>
+        <li>
+          <Nav.Link to="about">About</Nav.Link>
+        </li>
         <li>Contact</li>
       </ul>
     </Nav>

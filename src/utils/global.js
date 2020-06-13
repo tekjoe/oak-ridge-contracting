@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
   };
   html {
     font-family: "Montserrat", 'Helvetica Neue', sans-serif;
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
   body {
     background: ${({ theme }) => theme.background};
@@ -17,11 +17,15 @@ export const GlobalStyle = createGlobalStyle`
     p {
     line-height: 1.7;
     color: ${({ theme }) => theme.darkGray};
-  
+    }
+    @media (min-width: 768px) {
+      p {
+        font-size: 1.125rem;
+      }
   }
   }
   h1,h2,h3,h4,h5,h6 {
-    font-family: "Barlow", serif;
+    font-family: "Barlow", Arial, Helvetica, sans-serif, -apple-system, sans-serif;
     font-weight: 600;
     line-height: 1.06;
   }
