@@ -92,11 +92,15 @@ export default ({ siteTitle }) => (
         <li>
           <Nav.Link to="/">Home</Nav.Link>
         </li>
-        <li>Services</li>
+        <li>
+          <Nav.Link to="services">Services</Nav.Link>
+        </li>
         <li>
           <Nav.Link to="about">About</Nav.Link>
         </li>
-        <li>Contact</li>
+        <li>
+          <Nav.Link to="contact">Contact</Nav.Link>
+        </li>
       </ul>
     </Nav>
     <CTA>

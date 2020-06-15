@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-const Input = styled.input`
+const Textarea = styled.textarea`
   border: none;
   border-bottom: ${({ variant, theme }) =>
     variant === "inverse"
@@ -9,13 +9,21 @@ const Input = styled.input`
       : "2px solid #c1c5d7"};
   padding: 0.5rem 0;
   background: transparent;
+  font-size: 1rem;
   color: ${({ variant, theme }) =>
     variant === "inverse" ? theme.darkGray : "#c1c5d7"};
-  font-size: 1rem;
+  resize: none;
+  font-family: inherit;
 `
 
-export default ({ type, placeholder, id, variant }) => {
+export default ({ type, placeholder, id, rows, variant }) => {
   return (
-    <Input type={type} placeholder={placeholder} id={id} variant={variant} />
+    <Textarea
+      type={type}
+      placeholder={placeholder}
+      id={id}
+      rows={rows}
+      variant={variant}
+    />
   )
 }

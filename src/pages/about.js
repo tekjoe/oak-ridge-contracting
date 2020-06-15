@@ -109,6 +109,7 @@ StatsGrid.Stat = styled.div`
   }
   @media (min-width: 768px) {
     grid-column: span 2;
+    padding: 1rem 1rem 1rem 2rem;
     border-left: 3px solid #e5e5e5;
     h4 {
       font-size: 3.5rem;

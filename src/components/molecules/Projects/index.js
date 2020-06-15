@@ -56,6 +56,7 @@ const CTA = styled.button`
   @media (min-width: 768px) {
     flex-direction: row;
     grid-column: 6 / span 2;
+    font-size: 1.25rem;
   }
 `
 
