@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Highlight from "../components/organisms/Highlight"
 import Section from "../components/molecules/Section"
+import ImageGroup from "../components/molecules/ImageGroup"
 import TitleGroup from "../components/atoms/TitleGroup"
 import Image from "../components/atoms/Image"
 
@@ -60,36 +61,13 @@ const TextBlock = styled.div`
   }
 `
 
-const ImageGroup = styled.div`
-  grid-column: 1/-1;
-  display: flex;
-  flex-direction: column;
-  @media (min-width: 768px) {
-    grid-column: 2/-2;
-    flex-direction: row;
-  }
-`
-
-ImageGroup.Image = styled.div`
-  flex: 1;
-  &:first-of-type {
-    margin-bottom: 1rem;
-  }
-  @media (min-width: 768px) {
-    &:first-of-type {
-      margin-right: 1rem;
-      margin-bottom: 0;
-    }
-  }
-`
-
 const StatsGrid = styled.section`
   display: grid;
   grid-gap: 1rem;
   background: #f0f0f0;
   padding: 2rem 1rem;
   grid-template-columns: repeat(2, 1fr);
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     grid-template-columns: repeat(12, 1fr);
     padding: 4rem 0;
   }
@@ -97,7 +75,7 @@ const StatsGrid = styled.section`
 
 StatsGrid.Stat = styled.div`
   grid-column: span 1;
-  padding: 0 1rem;
+  padding: 1rem;
   h4 {
     font-size: 2.5rem;
     color: #3088da;
@@ -107,7 +85,7 @@ StatsGrid.Stat = styled.div`
     font-weight: 500;
     line-height: 140%;
   }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     grid-column: span 2;
     padding: 1rem 1rem 1rem 2rem;
     border-left: 3px solid #e5e5e5;

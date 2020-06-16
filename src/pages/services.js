@@ -1,17 +1,31 @@
 import React from "react"
 import styled from "styled-components"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Highlight from "../components/organisms/Highlight"
 import Section from "../components/molecules/Section"
+import TitleGroup from "../components/atoms/TitleGroup"
 
 const ServicesSection = styled(Section)`
   grid-gap: 1rem !important;
 `
 
-const ServiceCard = styled.div`
+const ServicesIntro = styled(Section)``
+
+ServicesIntro.Content = styled.div`
+  grid-column: 1/-1;
+  text-align: center;
+  @media (min-width: 768px) {
+    grid-column: 4 / span 6;
+  }
+`
+
+const ServiceCard = styled(Link)`
   cursor: pointer;
+  text-decoration: none;
+  color: ${({ theme }) => theme.darkGray};
   transition: background 0.4s;
   grid-column: 1/-1;
   background: #f0f0f0;
@@ -96,8 +110,22 @@ const SVGC = styled.div`
 const ServicesPage = () => (
   <Layout>
     <SEO title="Home" />
+    <ServicesIntro>
+      <ServicesIntro.Content>
+        <TitleGroup>
+          <h3>Services</h3>
+          <h2>All Services</h2>
+        </TitleGroup>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+          tellus pellentesque vel a consectetur nullam amet gravida nibh.
+          Convallis volutpat mauris pharetra vel, eu, tellus. Mi, ipsum dui,
+          auctor duis. Aliquam, euismod lacinia tellus mattis.
+        </p>
+      </ServicesIntro.Content>
+    </ServicesIntro>
     <ServicesSection>
-      <ServiceCard>
+      <ServiceCard to="service">
         <ServiceCard.Icon>
           <SVGC>
             <svg

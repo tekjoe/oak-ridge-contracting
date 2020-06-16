@@ -96,6 +96,9 @@ export default ({ siteTitle }) => (
           <Nav.Link to="services">Services</Nav.Link>
         </li>
         <li>
+          <Nav.Link to="projects">Portfolio</Nav.Link>
+        </li>
+        <li>
           <Nav.Link to="about">About</Nav.Link>
         </li>
         <li>
