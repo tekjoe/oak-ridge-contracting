@@ -10,8 +10,10 @@ const Footer = styled.footer`
   padding: 4rem 2rem;
   color: white;
   @media (min-width: 768px) {
+    padding: 6rem 0;
+  }
+  @media (min-width: 1024px) {
     margin-top: -2rem;
-    padding: 10rem 0;
   }
 `
 
@@ -20,6 +22,7 @@ const QuickLinks = styled.div`
   margin-bottom: 3rem;
   h4 {
     margin-bottom: 2rem;
+    font-size: 1.5rem;
   }
   ul {
     list-style-type: none;
@@ -33,7 +36,16 @@ const QuickLinks = styled.div`
     }
   }
   @media (min-width: 768px) {
-    grid-column: 2 / span 4;
+    grid-column: span 6;
+    padding-left: 2rem;
+  }
+  @media (min-width: 1024px) {
+    h4 {
+      font-size: ${({ theme }) => theme.typography.h4};
+    }
+  }
+  @media (min-width: 1200px) {
+    grid-column: 2 / span 5;
   }
 `
 
@@ -49,6 +61,7 @@ const Contact = styled.div`
   grid-column: 1/-1;
   h4 {
     margin-bottom: 2rem;
+    font-size: 1.5rem;
   }
   p {
     color: #c1c5d7;
@@ -56,21 +69,31 @@ const Contact = styled.div`
     font-size: 16px;
   }
   @media (min-width: 768px) {
-    grid-column: 7 / -3;
+    grid-column: span 6;
+    padding-right: 2rem;
+  }
+  @media (min-width: 1024px) {
+    h4 {
+      font-size: ${({ theme }) => theme.typography.h4};
+    }
+  }
+  @media (min-width: 1200px) {
+    grid-column: span 5;
   }
 `
 
 Contact.Form = styled.form`
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   input {
     margin-bottom: 1rem;
+    flex: 1;
   }
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     flex-direction: row;
     input {
       margin-right: 1rem;
-      margin-bottom: 0;
     }
   }
 `
@@ -104,7 +127,11 @@ export default () => {
         <Contact.Form>
           <Input placeholder="Your Name" type="text" />
           <Input placeholder="Your Email" type="email" />
-          <Button type="submit" onClick={e => e.preventDefault()}>
+          <Button
+            type="submit"
+            onClick={e => e.preventDefault()}
+            style={{ marginBottom: "1rem" }}
+          >
             Submit
           </Button>
         </Contact.Form>

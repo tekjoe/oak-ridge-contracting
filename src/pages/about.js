@@ -103,7 +103,7 @@ StatsGrid.Stat = styled.div`
 
 const AboutPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="About Us" />
     <AboutSection>
       <AboutSection.Body>
         <TitleGroup>

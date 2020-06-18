@@ -46,6 +46,11 @@ const AdvantageGroup = styled.div`
   flex-direction: column;
   @media (min-width: 768px) {
     flex-direction: row;
+  }
+  @media (min-width: 1024px) {
+    grid-column: 3 / span 8;
+  }
+  @media (min-width: 1200px) {
     grid-column: 4 / span 6;
   }
 `

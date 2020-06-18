@@ -95,7 +95,7 @@ const ContactMap = styled.div`
 
 const ContactPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Contact Us" />
     <ContactSection>
       <ContactForm>
         <TitleGroup>

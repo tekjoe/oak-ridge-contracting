@@ -68,7 +68,7 @@ const Partner = styled.div`
 
 const ProjectsPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Projects" />
     <ProjectsIntro>
       <ProjectsIntro.Content>
         <TitleGroup>

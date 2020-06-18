@@ -109,7 +109,7 @@ const SVGC = styled.div`
 
 const ServicesPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Our Services" />
     <ServicesIntro>
       <ServicesIntro.Content>
         <TitleGroup>

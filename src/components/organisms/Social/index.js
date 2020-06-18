@@ -2,14 +2,13 @@ import React from "react"
 import styled from "styled-components"
 import TitleGroup from "../../atoms/TitleGroup"
 import Image from "../../atoms/Image"
-import Card from "../../molecules/Card"
 
 const Social = styled.section`
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   margin: 3rem 1rem;
   @media (min-width: 768px) {
-    margin: 8rem 0;
+    margin: 6rem 1rem;
   }
 `
 
@@ -23,8 +22,26 @@ Social.Group = styled.div`
   display: flex;
   flex-direction: column;
   @media (min-width: 768px) {
-    grid-column: 3 / span 8;
     flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @media (min-width: 1024px) {
+    grid-column: 2 / span 10;
+  }
+  @media (min-width: 1920px) {
+    grid-column: 3 / span 8;
+  }
+`
+
+Social.Image = styled.div`
+  margin-bottom: 1rem;
+  flex: 1;
+  @media (min-width: 768px) {
+    height: 350px;
+    margin: 0.5rem;
+  }
+  @media (min-width: 1200px) {
+    height: 400px;
   }
 `
 
@@ -42,6 +59,10 @@ const CTA = styled.button`
   letter-spacing: 0.05rem;
   margin-top: 1rem;
   @media (min-width: 768px) {
+    grid-column: 5 / span 4;
+    font-size: 1.25rem;
+  }
+  @media (min-width: 1024px) {
     grid-column: 6 / span 2;
     font-size: 1.25rem;
   }
@@ -57,18 +78,18 @@ export default () => {
         </TitleGroup>
       </Social.Body>
       <Social.Group>
-        <Card variant="fourth">
+        <Social.Image>
           <Image style={{ height: "100%" }} />
-        </Card>
-        <Card variant="fourth">
+        </Social.Image>
+        <Social.Image>
           <Image style={{ height: "100%" }} />
-        </Card>
-        <Card variant="fourth">
+        </Social.Image>
+        <Social.Image>
           <Image style={{ height: "100%" }} />
-        </Card>
-        <Card variant="fourth">
+        </Social.Image>
+        <Social.Image>
           <Image style={{ height: "100%" }} />
-        </Card>
+        </Social.Image>
       </Social.Group>
       <CTA>See More</CTA>
     </Social>
