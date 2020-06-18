@@ -1,7 +1,9 @@
 import React from "react"
 import styled from "styled-components"
+import { motion } from "framer-motion"
 
-const TitleGroup = styled.div`
+const TitleGroup = styled(motion.div)`
+  opacity: 0;
   h3 {
     font-size: ${({ theme }) => theme.typography.paragraph};
     font-weight: 400;
@@ -26,5 +28,9 @@ const TitleGroup = styled.div`
 `
 
 export default ({ children }) => {
-  return <TitleGroup>{children}</TitleGroup>
+  return (
+    <TitleGroup initial={{ y: 50 }} animate={{ y: 0, opacity: 1 }}>
+      {children}
+    </TitleGroup>
+  )
 }

@@ -9,6 +9,16 @@ import Input from "../components/atoms/Input"
 import Textarea from "../components/atoms/Textarea"
 import Button from "../components/atoms/Button"
 
+import ReactMapboxGl from "react-mapbox-gl"
+
+const apiKey = process.env.GATSBY_API_KEY
+
+const Map = ReactMapboxGl({
+  accessToken: apiKey,
+  scrollZoom: false,
+  minZoom: 6,
+})
+
 const ContactSection = styled(Section)`
   grid-gap: 1rem !important;
   @media (min-width: 768px) {
@@ -93,47 +103,58 @@ const ContactMap = styled.div`
   }
 `
 
-const ContactPage = () => (
-  <Layout>
-    <SEO title="Contact Us" />
-    <ContactSection>
-      <ContactForm>
-        <TitleGroup>
-          <h3>Ask a Question</h3>
-          <h2>Contact Us By Email</h2>
-        </TitleGroup>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus sit
-          pharetra, quisque turpis lacus etiam. Gravida varius commodo
-          adipiscing nunc.
-        </p>
-        <ContactForm.Form>
-          <Input type="text" placeholder="Your Name" variant="inverse" />
-          <Input type="email" placeholder="Your Email" variant="inverse" />
-          <Textarea placeholder="Your Message" rows="5" variant="inverse" />
-          <Button variant="inverse">Contact Us</Button>
-        </ContactForm.Form>
-      </ContactForm>
-      <ContactInfo>
-        <TitleGroup>
-          <h3>Contact</h3>
-          <h2>How Can We Help You?</h2>
-        </TitleGroup>
-        <ul>
-          <li>
-            <strong>Location:</strong> 1234 Street Drive
-          </li>
-          <li>
-            <strong>Phone:</strong> 262-123-4567
-          </li>
-          <li>
-            <strong>Email:</strong> info@oakridgecontracting.com
-          </li>
-        </ul>
-      </ContactInfo>
-      <ContactMap />
-    </ContactSection>
-  </Layout>
-)
+const ContactPage = () => {
+  return (
+    <Layout>
+      <SEO title="Contact Us" />
+      <ContactSection>
+        <ContactForm>
+          <TitleGroup>
+            <h3>Ask a Question</h3>
+            <h2>Contact Us By Email</h2>
+          </TitleGroup>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus sit
+            pharetra, quisque turpis lacus etiam. Gravida varius commodo
+            adipiscing nunc.
+          </p>
+          <ContactForm.Form>
+            <Input type="text" placeholder="Your Name" variant="inverse" />
+            <Input type="email" placeholder="Your Email" variant="inverse" />
+            <Textarea placeholder="Your Message" rows="5" variant="inverse" />
+            <Button variant="inverse">Contact Us</Button>
+          </ContactForm.Form>
+        </ContactForm>
+        <ContactInfo>
+          <TitleGroup>
+            <h3>Contact</h3>
+            <h2>How Can We Help You?</h2>
+          </TitleGroup>
+          <ul>
+            <li>
+              <strong>Location:</strong> 1234 Street Drive
+            </li>
+            <li>
+              <strong>Phone:</strong> 262-123-4567
+            </li>
+            <li>
+              <strong>Email:</strong> info@oakridgecontracting.com
+            </li>
+          </ul>
+        </ContactInfo>
+        <ContactMap>
+          <Map
+            style="mapbox://styles/tekjoe/ck558iss20d681cqeyj4u2ov6"
+            center={[-88.288519, 43.015604]}
+            containerStyle={{
+              height: "100%",
+              width: "100%",
+            }}
+          ></Map>
+        </ContactMap>
+      </ContactSection>
+    </Layout>
+  )
+}
 
 export default ContactPage

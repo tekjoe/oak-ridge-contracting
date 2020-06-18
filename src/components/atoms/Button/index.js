@@ -3,6 +3,7 @@ import styled from "styled-components"
 
 const Button = styled.button`
   border: none;
+  text-decoration: none;
   border-bottom: ${({ variant }) =>
     variant === "inverse" ? "none" : "2px solid #3088da"};
   display: ${({ variant }) =>

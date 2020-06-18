@@ -45,10 +45,13 @@ Social.Image = styled.div`
   }
 `
 
-const CTA = styled.button`
+const CTA = styled.a`
   grid-column: 4 / span 6;
+  text-align: center;
+  display: block;
   background: #3088da;
   text-transform: uppercase;
+  text-decoration: none;
   border: none;
   padding: 1rem;
   font-size: 0.8rem;
@@ -91,7 +94,12 @@ export default () => {
           <Image style={{ height: "100%" }} />
         </Social.Image>
       </Social.Group>
-      <CTA>See More</CTA>
+      <CTA
+        href="https://www.instagram.com/oakridge_contracting/"
+        target="_blank"
+      >
+        See More
+      </CTA>
     </Social>
   )
 }

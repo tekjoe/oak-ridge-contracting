@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { motion } from "framer-motion"
 import Image from "../../atoms/Image"
 
 const Masthead = styled.section`
@@ -23,7 +24,7 @@ Masthead.Image = styled.div`
   }
 `
 
-Masthead.CTA = styled.div`
+Masthead.CTA = styled(motion.div)`
   background: hsl(230, 21%, 23%);
   padding: 2rem;
   position: relative;
@@ -67,8 +68,9 @@ Masthead.CTA = styled.div`
   }
 `
 
-Masthead.CTA.Body = styled.div`
+Masthead.CTA.Body = styled(motion.div)`
   max-width: 700px;
+  opacity: 0;
 `
 
 export default () => {
@@ -78,7 +80,10 @@ export default () => {
         <Image style={{ height: "100%" }} />
       </Masthead.Image>
       <Masthead.CTA>
-        <Masthead.CTA.Body>
+        <Masthead.CTA.Body
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.25 }}
+        >
           <h1>Oak Ridge Contracting</h1>
           <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
           <p>

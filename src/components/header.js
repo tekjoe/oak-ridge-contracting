@@ -179,22 +179,22 @@ export default ({ siteTitle }) => {
             <Nav.Link to="/">Home</Nav.Link>
           </li>
           <li>
-            <Nav.Link to="services">Services</Nav.Link>
+            <Nav.Link to="/services">Services</Nav.Link>
           </li>
           <li>
-            <Nav.Link to="projects">Portfolio</Nav.Link>
+            <Nav.Link to="/projects">Portfolio</Nav.Link>
           </li>
           <li>
-            <Nav.Link to="about">About</Nav.Link>
+            <Nav.Link to="/about">About</Nav.Link>
           </li>
           <li>
-            <Nav.Link to="contact">Contact</Nav.Link>
+            <Nav.Link to="/contact">Contact</Nav.Link>
           </li>
         </ul>
       </Nav>
       <CTA>
         <CTA.Phone>+1-262-555-5555</CTA.Phone>
-        <CTA.Button to="/">Contact Us</CTA.Button>
+        <CTA.Button to="/contact">Contact Us</CTA.Button>
       </CTA>
       <HamburgerButton onClick={toggleMenu}>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -211,16 +211,16 @@ export default ({ siteTitle }) => {
             <Nav.Link to="/">Home</Nav.Link>
           </motion.li>
           <motion.li variants={item} whileTap={{ scale: 0.95 }}>
-            <Nav.Link to="services">Services</Nav.Link>
+            <Nav.Link to="/services">Services</Nav.Link>
           </motion.li>
           <motion.li variants={item} whileTap={{ scale: 0.95 }}>
-            <Nav.Link to="projects">Portfolio</Nav.Link>
+            <Nav.Link to="/projects">Portfolio</Nav.Link>
           </motion.li>
           <motion.li variants={item} whileTap={{ scale: 0.95 }}>
-            <Nav.Link to="about">About</Nav.Link>
+            <Nav.Link to="/about">About</Nav.Link>
           </motion.li>
           <motion.li variants={item} whileTap={{ scale: 0.95 }}>
-            <Nav.Link to="contact">Contact Us</Nav.Link>
+            <Nav.Link to="/contact">Contact Us</Nav.Link>
           </motion.li>
         </motion.ul>
       </MobileNav>

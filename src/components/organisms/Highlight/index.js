@@ -3,6 +3,7 @@ import styled from "styled-components"
 import TitleGroup from "../../atoms/TitleGroup"
 import Button from "../../atoms/Button"
 import Image from "../../atoms/Image"
+import { Link } from "gatsby"
 
 const Highlight = styled.section`
   display: grid;
@@ -61,7 +62,9 @@ export default ({ reverse }) => {
             rhoncus eu eget vitae in vitae. Et fermentum pharetra, cras
             condimentum quis.
           </p>
-          <Button variant="inverse">Contact Us</Button>
+          <Button variant="inverse" as={Link} to="/contact">
+            Contact Us
+          </Button>
         </Highlight.Body.Content>
       </Highlight.Body>
     </Highlight>

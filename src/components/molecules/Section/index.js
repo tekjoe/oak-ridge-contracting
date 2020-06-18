@@ -1,6 +1,7 @@
 import styled from "styled-components"
+import { motion } from "framer-motion"
 
-const Section = styled.section`
+const Section = styled(motion.section)`
   margin: 3rem 1rem;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
