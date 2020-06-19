@@ -20,12 +20,15 @@ const TextBlock = styled.div`
   }
   @media (min-width: 768px) {
     margin-top: 6rem;
-    grid-column: 4/-4;
+    grid-column: 2/-2;
     margin: 6rem 0 6rem 0;
     h3 {
       font-size: 3rem;
       margin-bottom: 1.25rem;
     }
+  }
+  @media (min-width: 1200px) {
+    grid-column: 4/-4;
   }
 `
 

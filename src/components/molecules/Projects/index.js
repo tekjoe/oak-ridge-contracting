@@ -1,8 +1,9 @@
 import React from "react"
 import styled from "styled-components"
 import Image from "../../atoms/Image"
+import ImageOverlay from "../../atoms/ImageOverlay"
 import { Link } from "gatsby"
-import { motion } from "framer-motion"
+
 import TitleGroup from "../../atoms/TitleGroup"
 
 const Projects = styled.section`
@@ -44,10 +45,11 @@ const CardGrid = styled.div`
   }
 `
 
-CardGrid.Image = styled(motion.div)`
+CardGrid.Image = styled.div`
   margin-bottom: 1rem;
   width: 100%;
-  opacity: 0;
+  position: relative;
+  overflow: hidden;
   @media (min-width: 768px) {
     height: 350px;
     &:nth-of-type(even) {
@@ -62,6 +64,7 @@ CardGrid.Image = styled(motion.div)`
 const CTA = styled(Link)`
   grid-column: 4 / span 6;
   background: #3088da;
+  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   border: none;
@@ -99,13 +102,25 @@ export default () => {
       </Projects.Body>
       <Projects.Showcase>
         <CardGrid>
-          <CardGrid.Image animate={{ opacity: 1 }}>
+          <CardGrid.Image>
+            <ImageOverlay>
+              <h5>Home Renovation</h5>
+              <p>Waukesha</p>
+            </ImageOverlay>
             <Image style={{ height: "100%" }} />
           </CardGrid.Image>
-          <CardGrid.Image animate={{ opacity: 1 }}>
+          <CardGrid.Image>
+            <ImageOverlay>
+              <h5>General Contracting</h5>
+              <p>Palmyra</p>
+            </ImageOverlay>
             <Image style={{ height: "100%" }} />
           </CardGrid.Image>
-          <CardGrid.Image animate={{ opacity: 1 }}>
+          <CardGrid.Image>
+            <ImageOverlay>
+              <h5>Snow Removal</h5>
+              <p>Brookfield</p>
+            </ImageOverlay>
             <Image style={{ height: "100%" }} />
           </CardGrid.Image>
         </CardGrid>

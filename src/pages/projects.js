@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import Section from "../components/molecules/Section"
 import TitleGroup from "../components/atoms/TitleGroup"
 import Image from "../components/atoms/Image"
+import ImageOverlay from "../components/atoms/ImageOverlay"
 
 const ProjectsIntro = styled(Section)``
 const ProjectsGrid = styled(Section)`
@@ -24,6 +25,8 @@ ProjectsIntro.Content = styled.div`
 
 ProjectsGrid.Image = styled.div`
   grid-column: 1/-1;
+  position: relative;
+  overflow: hidden;
   @media (min-width: 768px) {
     grid-column: span 6;
   }
@@ -85,15 +88,31 @@ const ProjectsPage = () => (
     </ProjectsIntro>
     <ProjectsGrid>
       <ProjectsGrid.Image>
+        <ImageOverlay>
+          <h5>Home Renovation</h5>
+          <p>Waukesha</p>
+        </ImageOverlay>
         <Image />
       </ProjectsGrid.Image>
       <ProjectsGrid.Image>
+        <ImageOverlay>
+          <h5>Home Renovation</h5>
+          <p>Waukesha</p>
+        </ImageOverlay>
         <Image />
       </ProjectsGrid.Image>
       <ProjectsGrid.Image>
+        <ImageOverlay>
+          <h5>Home Renovation</h5>
+          <p>Waukesha</p>
+        </ImageOverlay>
         <Image />
       </ProjectsGrid.Image>
       <ProjectsGrid.Image>
+        <ImageOverlay>
+          <h5>Home Renovation</h5>
+          <p>Waukesha</p>
+        </ImageOverlay>
         <Image />
       </ProjectsGrid.Image>
     </ProjectsGrid>

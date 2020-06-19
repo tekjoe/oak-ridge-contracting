@@ -122,7 +122,9 @@ const ContactPage = () => {
             <Input type="text" placeholder="Your Name" variant="inverse" />
             <Input type="email" placeholder="Your Email" variant="inverse" />
             <Textarea placeholder="Your Message" rows="5" variant="inverse" />
-            <Button variant="inverse">Contact Us</Button>
+            <Button variant="inverse" onClick={e => e.preventDefault()}>
+              Contact Us
+            </Button>
           </ContactForm.Form>
         </ContactForm>
         <ContactInfo>

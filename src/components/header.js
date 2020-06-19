@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import React, { useState } from "react"
 import styled from "styled-components"
 import { motion } from "framer-motion"
+import LogoImage from "./atoms/LogoImage"
 
 const Header = styled.header`
   padding: 1rem;
@@ -15,6 +16,8 @@ const Header = styled.header`
 
 const Logo = styled.div`
   margin-right: 2rem;
+  height: 3rem;
+  width: 6rem;
 `
 
 Logo.Link = styled(Link)`
@@ -103,7 +106,7 @@ const MobileNav = styled(motion.nav)`
   font-weight: bold;
   z-index: 1;
   overflow: hidden;
-  top: 52px;
+  top: 5rem;
   left: 0;
   background: hsl(197, 5%, 90%);
   ul {
@@ -171,7 +174,7 @@ export default ({ siteTitle }) => {
   return (
     <Header>
       <Logo>
-        <Logo.Link to="/">{siteTitle}</Logo.Link>
+        <LogoImage />
       </Logo>
       <Nav>
         <ul>

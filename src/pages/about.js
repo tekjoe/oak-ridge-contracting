@@ -7,6 +7,7 @@ import Highlight from "../components/organisms/Highlight"
 import Section from "../components/molecules/Section"
 import ImageGroup from "../components/molecules/ImageGroup"
 import TitleGroup from "../components/atoms/TitleGroup"
+import TextBlock from "../components/molecules/TextBlock"
 import Image from "../components/atoms/Image"
 
 const AboutSection = styled(Section)``
@@ -29,35 +30,6 @@ AboutSection.FullwidthImage = styled.div`
   height: 300px;
   @media (min-width: 768px) {
     height: 450px;
-  }
-`
-
-const TextBlock = styled.div`
-  grid-column: 1/-1;
-  margin-top: 4rem;
-  h3 {
-    margin-bottom: 1rem;
-    font-size: 2rem;
-  }
-  p {
-    margin-bottom: 1.25rem;
-  }
-  blockquote {
-    font-size: 1.125rem;
-    margin-bottom: 1.25rem;
-    display: block;
-    line-height: 150%;
-    padding-left: 1rem;
-    border-left: 3px solid #3088da;
-  }
-  @media (min-width: 768px) {
-    margin-top: 6rem;
-    grid-column: 4/-4;
-    margin: 6rem 0 6rem 0;
-    h3 {
-      font-size: 3rem;
-      margin-bottom: 1.25rem;
-    }
   }
 `
 
