@@ -55,13 +55,12 @@ export default ({ reverse }) => {
       <Highlight.Body reverse={reverse}>
         <Highlight.Body.Content>
           <TitleGroup>
-            <h3>Another Title</h3>
-            <h2>Lorem Ipsum</h2>
+            <h3>Our Promise</h3>
+            <h2>We're not happy until you are</h2>
           </TitleGroup>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nullam
-            rhoncus eu eget vitae in vitae. Et fermentum pharetra, cras
-            condimentum quis.
+            No matter what the time of day, our lines are always open. We're
+            here to answer all of your questions and make your dreams a reality.
           </p>
           <Button variant="inverse" as={Link} to="/contact">
             Contact Us

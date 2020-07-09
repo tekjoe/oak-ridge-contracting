@@ -85,11 +85,11 @@ export default () => {
           transition={{ delay: 0.25 }}
         >
           <h1>Oak Ridge Contracting</h1>
-          <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
+          <h2>Transforming your vision into a reality</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora
-            reprehenderit culpa aliquam facilis velit molestiae eveniet porro
-            est dolores sint nostrum ab quidem, rerum.
+            We are passionate about building relationships with each and every
+            customer. From general contracting to snow removal, you can rest
+            assured that your property will be treated with the utmost respect.
           </p>
         </Masthead.CTA.Body>
       </Masthead.CTA>

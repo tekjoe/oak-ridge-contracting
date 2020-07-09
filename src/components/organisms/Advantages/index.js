@@ -81,7 +81,7 @@ export default () => {
             </svg>
           </SVGC>
           <h4>Experience</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+          <p>5 years of quality craftsmanship and happy customers</p>
         </Advantage>
         <Advantage>
           <SVGC>
@@ -94,7 +94,7 @@ export default () => {
             </svg>
           </SVGC>
           <h4>Reliability</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+          <p>We never cut corners or take shortcuts</p>
         </Advantage>
         <Advantage>
           <SVGC>
@@ -107,7 +107,7 @@ export default () => {
             </svg>
           </SVGC>
           <h4>Location</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+          <p>Proudly servicing southeastern Wisconsin.</p>
         </Advantage>
       </AdvantageGroup>
       <AdvantageGroup>
@@ -148,7 +148,7 @@ export default () => {
             </svg>
           </SVGC>
           <h4>Team</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+          <p>Trustworthy. Honest. Hardworking.</p>
         </Advantage>
       </AdvantageGroup>
     </Advantages>

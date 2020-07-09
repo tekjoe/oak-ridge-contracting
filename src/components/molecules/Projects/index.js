@@ -94,10 +94,9 @@ export default () => {
           <h2>Latest Projects</h2>
         </TitleGroup>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-          tellus pellentesque vel a consectetur nullam amet gravida nibh.
-          Convallis volutpat mauris pharetra vel, eu, tellus. Mi, ipsum dui,
-          auctor duis. Aliquam, euismod lacinia tellus mattis.
+          We're a team of trustworthy, hardworking, and friendly people who
+          never compromise. We work hard to ensure that every project goes above
+          and beyond your expectations.
         </p>
       </Projects.Body>
       <Projects.Showcase>
