@@ -16,14 +16,6 @@ const Textarea = styled.textarea`
   font-family: inherit;
 `
 
-export default ({ type, placeholder, id, rows, variant }) => {
-  return (
-    <Textarea
-      type={type}
-      placeholder={placeholder}
-      id={id}
-      rows={rows}
-      variant={variant}
-    />
-  )
+export default props => {
+  return <Textarea {...props} />
 }

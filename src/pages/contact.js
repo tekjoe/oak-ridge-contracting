@@ -1,4 +1,5 @@
-import React from "react"
+import React, { useState } from "react"
+import { navigate } from "gatsby-link"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -11,6 +12,12 @@ import Button from "../components/atoms/Button"
 import ReactMapboxGl from "react-mapbox-gl"
 
 const apiKey = process.env.GATSBY_API_KEY
+
+function encode(data) {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&")
+}
 
 const Map = ReactMapboxGl({
   accessToken: apiKey,
@@ -103,6 +110,26 @@ const ContactMap = styled.div`
 `
 
 const ContactPage = () => {
+  const [state, setState] = useState({})
+  const handleChange = e => {
+    setState({ ...state, [e.target.name]: e.target.value })
+  }
+
+  const handleSubmit = e => {
+    e.preventDefault()
+    const form = e.target
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": form.getAttribute("name"),
+        ...state,
+      }),
+    })
+      .then(() => navigate(form.getAttribute("action")))
+      .catch(error => alert(error))
+  }
   return (
     <Layout>
       <SEO title="Contact Us" />
@@ -121,24 +148,28 @@ const ContactPage = () => {
             name="contactForm"
             method="post"
             action="/contact/"
+            onSubmit={handleSubmit}
           >
             <Input
               type="text"
               placeholder="Your Name"
               variant="inverse"
               name="name"
+              onChange={handleChange}
             />
             <Input
               type="email"
               placeholder="Your Email"
               variant="inverse"
               name="email"
+              onChange={handleChange}
             />
             <Textarea
               placeholder="Your Message"
               rows="5"
               variant="inverse"
               name="message"
+              onChange={handleChange}
             />
             <input type="hidden" name="form-name" value="contactForm" />
             <Button variant="inverse">Contact Us</Button>

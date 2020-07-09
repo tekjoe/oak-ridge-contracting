@@ -14,14 +14,6 @@ const Input = styled.input`
   font-size: 1rem;
 `
 
-export default ({ type, placeholder, id, variant, name }) => {
-  return (
-    <Input
-      type={type}
-      placeholder={placeholder}
-      id={id}
-      variant={variant}
-      name={name}
-    />
-  )
+export default props => {
+  return <Input {...props} />
 }
