@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { navigate } from "gatsby-link"
+import { motion, AnimatePresence } from "framer-motion"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -53,8 +53,8 @@ const ContactForm = styled.div`
   }
 `
 
-ContactForm.Form = styled.form`
-  display: flex;
+ContactForm.Form = styled(motion.form)`
+  display: ${({ submitted }) => (submitted ? "none" : "flex")};
   flex-direction: column;
   input,
   textarea {
@@ -109,8 +109,21 @@ const ContactMap = styled.div`
   }
 `
 
+const MessageContainer = styled(motion.div)`
+  background: #30da92;
+  padding: 1rem;
+  text-align: center;
+  p {
+    margin-bottom: 0;
+  }
+  h4 {
+    margin-bottom: 0.5rem;
+  }
+`
+
 const ContactPage = () => {
   const [state, setState] = useState({})
+  const [submitted, setSubmitted] = useState(false)
   const handleChange = e => {
     setState({ ...state, [e.target.name]: e.target.value })
   }
@@ -118,7 +131,6 @@ const ContactPage = () => {
   const handleSubmit = e => {
     e.preventDefault()
     const form = e.target
-
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -127,7 +139,10 @@ const ContactPage = () => {
         ...state,
       }),
     })
-      .then(() => navigate(form.getAttribute("action")))
+      .then(() => {
+        form.reset()
+        setSubmitted(!submitted)
+      })
       .catch(error => alert(error))
   }
   return (
@@ -143,37 +158,61 @@ const ContactPage = () => {
             Interested in learning more about our services? Fill out the form
             below or call us at (262) 424-3241.
           </p>
-          <ContactForm.Form
-            data-netlify="true"
-            name="contactForm"
-            method="post"
-            action="/contact/"
-            onSubmit={handleSubmit}
-          >
-            <Input
-              type="text"
-              placeholder="Your Name"
-              variant="inverse"
-              name="name"
-              onChange={handleChange}
-            />
-            <Input
-              type="email"
-              placeholder="Your Email"
-              variant="inverse"
-              name="email"
-              onChange={handleChange}
-            />
-            <Textarea
-              placeholder="Your Message"
-              rows="5"
-              variant="inverse"
-              name="message"
-              onChange={handleChange}
-            />
-            <input type="hidden" name="form-name" value="contactForm" />
-            <Button variant="inverse">Contact Us</Button>
-          </ContactForm.Form>
+          <AnimatePresence>
+            {!submitted && (
+              <ContactForm.Form
+                data-netlify="true"
+                name="contactForm"
+                method="post"
+                action="/contact/"
+                onSubmit={handleSubmit}
+                initial={{ y: 0 }}
+                transition={{ duration: 0.15 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0, y: -50 }}
+              >
+                <Input
+                  type="text"
+                  placeholder="Your Name"
+                  variant="inverse"
+                  name="name"
+                  onChange={handleChange}
+                />
+                <Input
+                  type="email"
+                  placeholder="Your Email"
+                  variant="inverse"
+                  name="email"
+                  onChange={handleChange}
+                />
+                <Textarea
+                  placeholder="Your Message"
+                  rows="5"
+                  variant="inverse"
+                  name="message"
+                  onChange={handleChange}
+                />
+                <input type="hidden" name="form-name" value="contactForm" />
+                <Button
+                  variant="inverse"
+                  disabled={state.email && state.message ? false : true}
+                >
+                  Contact Us
+                </Button>
+              </ContactForm.Form>
+            )}
+          </AnimatePresence>
+
+          {submitted && (
+            <MessageContainer
+              initial={{ y: 50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.3 }}
+            >
+              <h4>Thank you!</h4>
+              <p>We'll be in touch as soon as possible.</p>
+            </MessageContainer>
+          )}
         </ContactForm>
         <ContactInfo>
           <TitleGroup>

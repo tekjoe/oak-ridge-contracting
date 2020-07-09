@@ -17,7 +17,7 @@ const Button = styled.button`
   color: ${({ variant }) =>
     variant === "inverse" ? "hsl(230,21%,23%)" : "#c1c5d7"};
   transition: all 0.3s;
-  cursor: pointer;
+  cursor: ${({ disabled }) => (disabled ? "not-allowed" : "pointer")};
   font-weight: ${({ variant }) => (variant === "inverse" ? "bold" : "normal")};
   text-transform: ${({ variant }) =>
     variant === "inverse" ? "uppercase" : "none"};
