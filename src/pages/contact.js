@@ -1,6 +1,5 @@
-import React, { useState } from "react"
+import React from "react"
 import styled from "styled-components"
-import { navigate } from "gatsby-link"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Section from "../components/molecules/Section"
@@ -18,12 +17,6 @@ const Map = ReactMapboxGl({
   scrollZoom: false,
   minZoom: 6,
 })
-
-function encode(data) {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&")
-}
 
 const ContactSection = styled(Section)`
   grid-gap: 1rem !important;
@@ -110,29 +103,11 @@ const ContactMap = styled.div`
 `
 
 const ContactPage = () => {
-  const [state, setState] = useState({})
-  const handleChange = e => {
-    setState({ ...state, [e.target.name]: e.target.value })
-  }
-  const handleSubmit = e => {
-    e.preventDefault()
-    const form = e.target
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
-        "form-name": form.getAttribute("name"),
-        ...state,
-      }),
-    })
-      .then(() => navigate(form.getAttribute("action")))
-      .catch(error => alert(error))
-  }
   return (
     <Layout>
       <SEO title="Contact Us" />
       <ContactSection>
-        <ContactForm d>
+        <ContactForm>
           <TitleGroup>
             <h3>Ask a Question</h3>
             <h2>Contact Us By Email</h2>
@@ -144,8 +119,7 @@ const ContactPage = () => {
           <ContactForm.Form
             data-netlify="true"
             name="contactForm"
-            method="POST"
-            onSubmit={handleSubmit}
+            method="post"
             action="/contact/"
           >
             <Input
@@ -153,21 +127,18 @@ const ContactPage = () => {
               placeholder="Your Name"
               variant="inverse"
               name="name"
-              onChange={handleChange}
             />
             <Input
               type="email"
               placeholder="Your Email"
               variant="inverse"
               name="email"
-              onChange={handleChange}
             />
             <Textarea
               placeholder="Your Message"
               rows="5"
               variant="inverse"
               name="message"
-              onChange={handleChange}
             />
             <input type="hidden" name="form-name" value="contactForm" />
             <Button variant="inverse">Contact Us</Button>
