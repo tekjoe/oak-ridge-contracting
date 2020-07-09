@@ -55,12 +55,16 @@ export default ({ reverse }) => {
       <Highlight.Body reverse={reverse}>
         <Highlight.Body.Content>
           <TitleGroup>
-            <h3>Our Promise</h3>
-            <h2>We're not happy until you are</h2>
+            <h3>{reverse ? `Let's Get Started` : `Our Promise`}</h3>
+            <h2>
+              {reverse ? `Get in Touch` : `We're not happy until you are`}
+            </h2>
           </TitleGroup>
           <p>
-            No matter what the time of day, our lines are always open. We're
-            here to answer all of your questions and make your dreams a reality.
+            {reverse
+              ? `We pride ourselves on building relationships with our customers. No matter the size or budget of your project, we always deliver outstanding customer service.`
+              : `No matter what the time of day, our lines are always open. We're
+            here to answer all of your questions and make your dreams a reality.`}
           </p>
           <Button variant="inverse" as={Link} to="/contact">
             Contact Us

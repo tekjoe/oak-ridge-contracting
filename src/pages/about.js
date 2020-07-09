@@ -83,10 +83,12 @@ const AboutPage = () => (
           <h2>Oak Ridge Contracting</h2>
         </TitleGroup>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-          tellus pellentesque vel a consectetur nullam amet gravida nibh.
-          Convallis volutpat mauris pharetra vel, eu, tellus. Mi, ipsum dui,
-          auctor duis. Aliquam, euismod lacinia tellus mattis.
+          When it comes to residential and commercial remodeling in southeastern
+          Wisconsin, Oakridge Contracting is the name to know. Since 2005, we've
+          provided outstanding, fully licensed building and construction
+          remodeling services. We also specialize in residential and commercial
+          snow removal so you can feel safe before, during, and after any winter
+          storm.
         </p>
       </AboutSection.Body>
       <AboutSection.FullwidthImage>
@@ -95,20 +97,19 @@ const AboutPage = () => (
       <TextBlock>
         <h3>Our company's history</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-          tellus pellentesque vel a consectetur nullam amet gravida nibh.
-          Convallis volutpat mauris pharetra vel, eu, tellus. Mi, ipsum dui,
-          auctor duis. Aliquam, euismod lacinia tellus mattis.
+          In 2005, we began with a vision of a construction company that treated
+          all of its customers like family. We believe in being honest with our
+          customers at every stage of a project.
         </p>
         <blockquote>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-          tellus pellentesque vel a consectetur nullam amet gravida nibh.
+          If our customers ever have questions, we urge them to let us know! We
+          keep all lines of communication open during our projects.
         </blockquote>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-          tellus pellentesque vel a consectetur nullam amet gravida nibh.
-          Convallis volutpat mauris pharetra vel, eu, tellus. Mi, ipsum dui,
-          auctor duis. Aliquam, euismod lacinia tellus mattis.
+          Oakridge Contracting delivers professional services to residential and
+          commercial properties at reasonable and affordable prices. We're
+          dedicated to customer service and satisfaction, so we're not happy
+          until you are.
         </p>
       </TextBlock>
       <ImageGroup>
@@ -120,29 +121,26 @@ const AboutPage = () => (
         </ImageGroup.Image>
       </ImageGroup>
       <TextBlock>
-        <h3>Building the future</h3>
+        <h3>Our Commitment</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-          tellus pellentesque vel a consectetur nullam amet gravida nibh.
-          Convallis volutpat mauris pharetra vel, eu, tellus. Mi, ipsum dui,
-          auctor duis. Aliquam, euismod lacinia tellus mattis.
+          The decision to add on, restore, or remodel your home or other
+          building is no small task. We truly believe that our attention to
+          detail and passion for craftsmanship set us apart from our
+          competitors. Our commitment to the most professional standards means
+          that we stand behind everything we do from start to finish.
         </p>
-        <blockquote>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-          tellus pellentesque vel a consectetur nullam amet gravida nibh.
-        </blockquote>
+        <h3>Fully Licensed</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-          tellus pellentesque vel a consectetur nullam amet gravida nibh.
-          Convallis volutpat mauris pharetra vel, eu, tellus. Mi, ipsum dui,
-          auctor duis. Aliquam, euismod lacinia tellus mattis.
+          Having all the right licenses and permits ensures that a project can
+          go smoothly. We are proud to be a licensed dwelling contractor, US DOT
+          certified business, and lead safe certified contractor.
         </p>
       </TextBlock>
     </AboutSection>
     <StatsGrid>
       <StatsGrid.Stat>
         <h4>5</h4>
-        <p>years in the construction and real estate market</p>
+        <p>years serving southeastern Wisconsin</p>
       </StatsGrid.Stat>
       <StatsGrid.Stat>
         <h4>240+</h4>

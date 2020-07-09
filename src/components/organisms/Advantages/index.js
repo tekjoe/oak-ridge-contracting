@@ -107,7 +107,7 @@ export default () => {
             </svg>
           </SVGC>
           <h4>Location</h4>
-          <p>Proudly servicing southeastern Wisconsin.</p>
+          <p>Proudly servicing southeastern Wisconsin</p>
         </Advantage>
       </AdvantageGroup>
       <AdvantageGroup>
@@ -122,7 +122,7 @@ export default () => {
             </svg>
           </SVGC>
           <h4>Quality Materials</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+          <p>We use the best materials for the job at hand</p>
         </Advantage>
         <Advantage>
           <SVGC>
@@ -135,7 +135,7 @@ export default () => {
             </svg>
           </SVGC>
           <h4>Landscape</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+          <p>Awe inspiring landscaping for all types of homes</p>
         </Advantage>
         <Advantage>
           <SVGC>

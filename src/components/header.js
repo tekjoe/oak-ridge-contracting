@@ -71,9 +71,13 @@ const CTA = styled.div`
   }
 `
 
-CTA.Phone = styled.h3`
+CTA.Phone = styled.a`
   margin-right: 1rem;
   font-size: 1.25rem;
+  text-decoration: none;
+  font-size: ${({ theme }) => theme.typography.h6};
+  font-weight: bold;
+  color: black;
 `
 
 CTA.Button = styled(Link)`
@@ -196,7 +200,7 @@ export default () => {
         </ul>
       </Nav>
       <CTA>
-        <CTA.Phone>+1-262-555-5555</CTA.Phone>
+        <CTA.Phone href="tel:12624243241">+1-262-424-3241</CTA.Phone>
         <CTA.Button to="/contact">Contact Us</CTA.Button>
       </CTA>
       <HamburgerButton onClick={toggleMenu}>

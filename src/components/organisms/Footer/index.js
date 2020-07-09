@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Input from "../../atoms/Input"
 import Button from "../../atoms/Button"
+import { Link } from "gatsby"
 
 const Footer = styled.footer`
   display: grid;
@@ -28,11 +29,7 @@ const QuickLinks = styled.div`
     list-style-type: none;
     margin-right: 2rem;
     li {
-      text-transform: uppercase;
-      color: #c1c5d7;
       margin-bottom: 1rem;
-      letter-spacing: 2px;
-      font-size: 14px;
     }
   }
   @media (min-width: 768px) {
@@ -55,6 +52,14 @@ QuickLinks.Links = styled.div`
   @media (min-width: 768px) {
     flex-direction: row;
   }
+`
+
+QuickLinks.Link = styled(Link)`
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #c1c5d7;
+  letter-spacing: 2px;
+  font-size: 14px;
 `
 
 const Contact = styled.div`
@@ -105,28 +110,52 @@ export default () => {
         <h4>Quick Links</h4>
         <QuickLinks.Links>
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Projects</li>
+            <li>
+              <QuickLinks.Link to="/">Home</QuickLinks.Link>
+            </li>
+            <li>
+              <QuickLinks.Link to="/about">About</QuickLinks.Link>
+            </li>
+            <li>
+              <QuickLinks.Link to="/services">Services</QuickLinks.Link>
+            </li>
+            <li>
+              <QuickLinks.Link to="/projects">Projects</QuickLinks.Link>
+            </li>
+            <li></li>
           </ul>
           <ul>
-            <li>Home Renovations</li>
-            <li>Kitchen Remodels</li>
-            <li>Exterior Renovations</li>
-            <li>Landscaping</li>
+            <li>
+              <QuickLinks.Link to="/">Home Renovations</QuickLinks.Link>
+            </li>
+            <li>
+              <QuickLinks.Link to="/">Kitchen Remodels</QuickLinks.Link>
+            </li>
+            <li>
+              <QuickLinks.Link to="/">Exterior Renovations</QuickLinks.Link>
+            </li>
+            <li>
+              <QuickLinks.Link to="/">Landscaping</QuickLinks.Link>
+            </li>
           </ul>
         </QuickLinks.Links>
       </QuickLinks>
       <Contact>
         <h4>Do you have any questions?</h4>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nullam
-          rhoncus eu eget vitae in vitae.{" "}
+          If you'd like us to get in contact with you over the phone, please
+          leave you name and number below and we'll get in touch as soon as we
+          can.
         </p>
-        <Contact.Form>
-          <Input placeholder="Your Name" type="text" />
-          <Input placeholder="Your Email" type="email" />
+        <Contact.Form netlify name="phoneForm">
+          <Input placeholder="Your Name" type="text" name="name" />
+          <Input
+            placeholder="Your Phone (ex. 123-456-7890)"
+            type="tel"
+            name="phone"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            required
+          />
           <Button
             type="submit"
             onClick={e => e.preventDefault()}
