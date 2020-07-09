@@ -169,7 +169,7 @@ const ContactPage = () => {
               name="message"
               onChange={handleChange}
             />
-            <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="form-name" value="contactForm" />
             <Button variant="inverse">Contact Us</Button>
           </ContactForm.Form>
         </ContactForm>
