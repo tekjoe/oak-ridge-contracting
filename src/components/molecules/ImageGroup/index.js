@@ -13,6 +13,7 @@ const ImageGroup = styled.div`
 ImageGroup.Image = styled.div`
   flex: 1;
   overflow: hidden;
+  max-height: 350px;
   &:first-of-type {
     margin-bottom: 1rem;
   }

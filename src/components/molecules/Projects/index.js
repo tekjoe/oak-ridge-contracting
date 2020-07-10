@@ -1,6 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 import Image from "../../atoms/Image"
+import ImageSnow from "../../atoms/ImageSnow"
+import ImageRenovation from "../../atoms/ImageRenovation"
 import ImageOverlay from "../../atoms/ImageOverlay"
 import { Link } from "gatsby"
 
@@ -90,8 +92,8 @@ export default () => {
     <Projects>
       <Projects.Body>
         <TitleGroup>
-          <h3>Projects</h3>
-          <h2>Latest Projects</h2>
+          <h3>Services</h3>
+          <h2>Our Work</h2>
         </TitleGroup>
         <p>
           We're a team of trustworthy, hardworking, and friendly people who
@@ -104,23 +106,20 @@ export default () => {
           <CardGrid.Image>
             <ImageOverlay>
               <h5>Home Renovation</h5>
-              <p>Waukesha</p>
             </ImageOverlay>
-            <Image style={{ height: "100%" }} />
+            <ImageRenovation style={{ height: "100%" }} />
           </CardGrid.Image>
           <CardGrid.Image>
             <ImageOverlay>
               <h5>General Contracting</h5>
-              <p>Palmyra</p>
             </ImageOverlay>
             <Image style={{ height: "100%" }} />
           </CardGrid.Image>
           <CardGrid.Image>
             <ImageOverlay>
               <h5>Snow Removal</h5>
-              <p>Brookfield</p>
             </ImageOverlay>
-            <Image style={{ height: "100%" }} />
+            <ImageSnow style={{ height: "100%" }} />
           </CardGrid.Image>
         </CardGrid>
       </Projects.Showcase>

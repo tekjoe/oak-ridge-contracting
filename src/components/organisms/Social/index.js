@@ -1,7 +1,10 @@
 import React from "react"
 import styled from "styled-components"
 import TitleGroup from "../../atoms/TitleGroup"
-import Image from "../../atoms/Image"
+import IgImage1 from "../../atoms/IgImages/IgImage1"
+import IgImage2 from "../../atoms/IgImages/IgImage2"
+import IgImage3 from "../../atoms/IgImages/IgImage3"
+import IgImage4 from "../../atoms/IgImages/IgImage4"
 
 const Social = styled.section`
   display: grid;
@@ -82,16 +85,16 @@ export default () => {
       </Social.Body>
       <Social.Group>
         <Social.Image>
-          <Image style={{ height: "100%" }} />
+          <IgImage1 style={{ height: "100%" }} />
         </Social.Image>
         <Social.Image>
-          <Image style={{ height: "100%" }} />
+          <IgImage2 style={{ height: "100%" }} />
         </Social.Image>
         <Social.Image>
-          <Image style={{ height: "100%" }} />
+          <IgImage3 style={{ height: "100%" }} />
         </Social.Image>
         <Social.Image>
-          <Image style={{ height: "100%" }} />
+          <IgImage4 style={{ height: "100%" }} />
         </Social.Image>
       </Social.Group>
       <CTA

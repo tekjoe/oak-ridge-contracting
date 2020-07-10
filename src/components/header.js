@@ -188,9 +188,9 @@ export default () => {
           <li>
             <Nav.Link to="/services">Services</Nav.Link>
           </li>
-          <li>
+          {/* <li>
             <Nav.Link to="/projects">Projects</Nav.Link>
-          </li>
+          </li> */}
           <li>
             <Nav.Link to="/about">About</Nav.Link>
           </li>
@@ -220,9 +220,9 @@ export default () => {
           <motion.li variants={item} whileTap={{ scale: 0.95 }}>
             <Nav.Link to="/services">Services</Nav.Link>
           </motion.li>
-          <motion.li variants={item} whileTap={{ scale: 0.95 }}>
+          {/* <motion.li variants={item} whileTap={{ scale: 0.95 }}>
             <Nav.Link to="/projects">Projects</Nav.Link>
-          </motion.li>
+          </motion.li> */}
           <motion.li variants={item} whileTap={{ scale: 0.95 }}>
             <Nav.Link to="/about">About</Nav.Link>
           </motion.li>

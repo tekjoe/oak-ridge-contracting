@@ -165,7 +165,7 @@ const ServicesPage = () => {
         initial={false}
       >
         <ServiceCard variants={item}>
-          <ServiceCard.Link to="/service">
+          <ServiceCard.Link to="/contracting">
             <ServiceCard.Icon>
               <SVGC>
                 <svg
@@ -174,75 +174,6 @@ const ServicesPage = () => {
                   fill="#fff"
                 >
                   <path d="M6.47 9.8A5 5 0 0 1 .2 3.22l3.95 3.95 2.82-2.83L3.03.41a5 5 0 0 1 6.4 6.68l10 10-2.83 2.83L6.47 9.8z" />
-                </svg>
-              </SVGC>
-            </ServiceCard.Icon>
-            <ServiceCard.Line />
-            <h5>Services</h5>
-            <h4>Construction</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              sagittis tincidunt orci lobortis mauris nulla velit dictum
-              viverra.
-            </p>
-          </ServiceCard.Link>
-        </ServiceCard>
-        <ServiceCard variants={item}>
-          <ServiceCard.Link to="/service">
-            <ServiceCard.Icon>
-              <SVGC>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="#fff"
-                >
-                  <path d="M8 20H3V10H0L10 0l10 10h-3v10h-5v-6H8v6z" />
-                </svg>
-              </SVGC>
-            </ServiceCard.Icon>
-            <ServiceCard.Line />
-            <h5>Services</h5>
-            <h4>Renovations</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              sagittis tincidunt orci lobortis mauris nulla velit dictum
-              viverra.
-            </p>
-          </ServiceCard.Link>
-        </ServiceCard>
-        <ServiceCard variants={item}>
-          <ServiceCard.Link to="service">
-            <ServiceCard.Icon>
-              <SVGC>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="#fff"
-                >
-                  <path d="M16.88 9.1A4 4 0 0 1 16 17H5a5 5 0 0 1-1-9.9V7a3 3 0 0 1 4.52-2.59A4.98 4.98 0 0 1 17 8c0 .38-.04.74-.12 1.1z" />
-                </svg>
-              </SVGC>
-            </ServiceCard.Icon>
-            <ServiceCard.Line />
-            <h5>Services</h5>
-            <h4>Snow Removal</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              sagittis tincidunt orci lobortis mauris nulla velit dictum
-              viverra.
-            </p>
-          </ServiceCard.Link>
-        </ServiceCard>
-        <ServiceCard variants={item}>
-          <ServiceCard.Link to="/service">
-            <ServiceCard.Icon>
-              <SVGC>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="#fff"
-                >
-                  <path d="M16.88 9.1A4 4 0 0 1 16 17H5a5 5 0 0 1-1-9.9V7a3 3 0 0 1 4.52-2.59A4.98 4.98 0 0 1 17 8c0 .38-.04.74-.12 1.1z" />
                 </svg>
               </SVGC>
             </ServiceCard.Icon>
@@ -257,7 +188,7 @@ const ServicesPage = () => {
           </ServiceCard.Link>
         </ServiceCard>
         <ServiceCard variants={item}>
-          <ServiceCard.Link to="/service">
+          <ServiceCard.Link to="/renovations">
             <ServiceCard.Icon>
               <SVGC>
                 <svg
@@ -265,13 +196,13 @@ const ServicesPage = () => {
                   viewBox="0 0 20 20"
                   fill="#fff"
                 >
-                  <path d="M16.88 9.1A4 4 0 0 1 16 17H5a5 5 0 0 1-1-9.9V7a3 3 0 0 1 4.52-2.59A4.98 4.98 0 0 1 17 8c0 .38-.04.74-.12 1.1z" />
+                  <path d="M8 20H3V10H0L10 0l10 10h-3v10h-5v-6H8v6z" />
                 </svg>
               </SVGC>
             </ServiceCard.Icon>
             <ServiceCard.Line />
             <h5>Services</h5>
-            <h4>Another Service</h4>
+            <h4>Home Renovations</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
               sagittis tincidunt orci lobortis mauris nulla velit dictum
@@ -280,7 +211,7 @@ const ServicesPage = () => {
           </ServiceCard.Link>
         </ServiceCard>
         <ServiceCard variants={item}>
-          <ServiceCard.Link to="/service">
+          <ServiceCard.Link to="/snow-removal">
             <ServiceCard.Icon>
               <SVGC>
                 <svg
@@ -294,7 +225,7 @@ const ServicesPage = () => {
             </ServiceCard.Icon>
             <ServiceCard.Line />
             <h5>Services</h5>
-            <h4>Another Service</h4>
+            <h4>Snow Removal</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
               sagittis tincidunt orci lobortis mauris nulla velit dictum
