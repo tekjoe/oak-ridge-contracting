@@ -202,7 +202,6 @@ const ContactPage = () => {
               </ContactForm.Form>
             )}
           </AnimatePresence>
-
           {submitted && (
             <MessageContainer
               initial={{ y: 50, opacity: 0 }}

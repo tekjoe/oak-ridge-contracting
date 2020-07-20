@@ -61,6 +61,7 @@ const Nav = styled.nav`
 Nav.Link = styled(Link)`
   text-decoration: none;
   color: inherit;
+  position: relative;
   &:hover {
     color: #3088da;
   }

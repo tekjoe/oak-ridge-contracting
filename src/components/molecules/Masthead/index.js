@@ -34,7 +34,7 @@ Masthead.CTA = styled(motion.div)`
   align-items: flex-start;
   grid-column: 1/-1;
   h1 {
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 400;
     color: white;
     border-bottom: 2px solid #30da92;
@@ -59,12 +59,33 @@ Masthead.CTA = styled(motion.div)`
   @media (min-width: 1024px) {
     grid-column: 6 / -1;
     grid-row: -1 / -8;
-    h1 {
-      font-size: 1.25rem;
-    }
     h2 {
       font-size: 3rem;
     }
+  }
+`
+
+Masthead.Subtitle = styled.p`
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: white !important;
+  border-bottom: 2px solid #30da92;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.06;
+  font-family: "Barlow", Arial, Helvetica, sans-serif, -apple-system, sans-serif;
+`
+
+Masthead.Title = styled.p`
+  font-size: 2rem;
+  color: white !important;
+  margin-bottom: 1rem;
+  line-height: 1.06;
+  font-weight: bold;
+  font-family: "Barlow", Arial, Helvetica, sans-serif, -apple-system, sans-serif;
+  @media (min-width: 1024px) {
+    font-size: 3rem;
   }
 `
 
@@ -84,8 +105,10 @@ export default () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.25 }}
         >
-          <h1>Oak Ridge Contracting</h1>
-          <h2>Transforming your vision into a reality</h2>
+          <Masthead.Subtitle>Oak Ridge Contracting</Masthead.Subtitle>
+          <Masthead.Title>
+            Transforming your vision into a reality
+          </Masthead.Title>
           <p>
             We are passionate about building relationships with each and every
             customer. From general contracting to snow removal, you can rest

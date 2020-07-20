@@ -32,6 +32,9 @@ ImageGroup.Image = styled.div`
       margin-bottom: 0;
     }
   }
+  @media (min-width: 1200px) {
+    max-height: 450px;
+  }
 `
 
 export default ImageGroup

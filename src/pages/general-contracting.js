@@ -7,6 +7,7 @@ import Masthead from "../components/molecules/Masthead"
 import TextBlock from "../components/molecules/TextBlock"
 import ImageGroup from "../components/molecules/ImageGroup"
 import Image from "../components/atoms/Image"
+import ImageGenCon from "../components/atoms/ImageGenCon"
 import Highlight from "../components/organisms/Highlight"
 
 const ServicePage = () => (
@@ -15,7 +16,7 @@ const ServicePage = () => (
     <Masthead />
     <Section>
       <TextBlock>
-        <h3>General Contracting</h3>
+        <h1>General Contracting</h1>
         <p>
           At Oak Ridge Contracting, we pride ourselves on providing outstanding
           customer service to Waukesha County and surrounding areas. We work
@@ -35,14 +36,14 @@ const ServicePage = () => (
       </TextBlock>
       <ImageGroup>
         <ImageGroup.Image>
-          <Image />
+          <ImageGenCon />
         </ImageGroup.Image>
         <ImageGroup.Image>
-          <Image />
+          <Image style={{ height: "100%" }} />
         </ImageGroup.Image>
       </ImageGroup>
       <TextBlock>
-        <h3>Contracting Services</h3>
+        <h2>Contracting Services</h2>
         <p>
           We have the goal to be a one-stop-shop for all of our customers at
           every step of a project. Our team of contractors are experienced in

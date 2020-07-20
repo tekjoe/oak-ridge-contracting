@@ -16,7 +16,7 @@ const ServicePage = () => (
     <Masthead />
     <Section>
       <TextBlock>
-        <h3>Home Renovations</h3>
+        <h1>Home Renovations</h1>
         <p>
           Starting a home renovation is an exciting endeavor, but it can also be
           a stressful time. From a bathroom remodel to a complete dream home
@@ -43,7 +43,7 @@ const ServicePage = () => (
         </ImageGroup.Image>
       </ImageGroup>
       <TextBlock>
-        <h3>Love Where You Live</h3>
+        <h2>Love Where You Live</h2>
         <p>
           Whether your project requires a bathroom renovation, a kitchen
           remodel, or an entire new home addition, a well planned renovation can

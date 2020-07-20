@@ -9,6 +9,8 @@ import ImageGroup from "../components/molecules/ImageGroup"
 import TitleGroup from "../components/atoms/TitleGroup"
 import TextBlock from "../components/molecules/TextBlock"
 import Image from "../components/atoms/Image"
+import ImageTeam from "../components/atoms/ImageTeam"
+import ImageNick from "../components/atoms/ImageNick"
 
 const AboutSection = styled(Section)``
 
@@ -84,7 +86,7 @@ const AboutPage = () => (
         </TitleGroup>
         <p>
           When it comes to residential and commercial remodeling in southeastern
-          Wisconsin, Oakridge Contracting is the name to know. Since 2005, we've
+          Wisconsin, Oakridge Contracting is the name to know. Since 2015, we've
           provided outstanding, fully licensed building and construction
           remodeling services. We also specialize in residential and commercial
           snow removal so you can feel safe before, during, and after any winter
@@ -114,10 +116,10 @@ const AboutPage = () => (
       </TextBlock>
       <ImageGroup>
         <ImageGroup.Image>
-          <Image />
+          <ImageNick style={{ height: "100%" }} />
         </ImageGroup.Image>
         <ImageGroup.Image>
-          <Image />
+          <ImageTeam style={{ height: "100%" }} />
         </ImageGroup.Image>
       </ImageGroup>
       <TextBlock>

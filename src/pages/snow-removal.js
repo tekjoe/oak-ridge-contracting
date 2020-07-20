@@ -16,7 +16,7 @@ const ServicePage = () => (
     <Masthead />
     <Section>
       <TextBlock>
-        <h3>Snow Removal & Ice Management</h3>
+        <h1>Snow Removal & Ice Management</h1>
         <p>
           Oak Ridge Contracting provices reliable, efficient, and safe snow
           services in southeastern Wisconsin. We remain available 24 hours hours
@@ -41,7 +41,7 @@ const ServicePage = () => (
         </ImageGroup.Image>
       </ImageGroup>
       <TextBlock>
-        <h3>Our Snow and Ice Services</h3>
+        <h2>Our Snow and Ice Services</h2>
         <ul>
           <li>Commercial and residential snow plowing</li>
           <li>Sidewalk snow removal</li>

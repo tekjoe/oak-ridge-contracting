@@ -3,7 +3,8 @@ import styled from "styled-components"
 const TextBlock = styled.div`
   grid-column: 1/-1;
   margin-top: 4rem;
-  h3 {
+  h1,
+  h2 {
     margin-bottom: 1rem;
     font-size: 2rem;
   }
@@ -29,7 +30,8 @@ const TextBlock = styled.div`
     margin-top: 6rem;
     grid-column: 2/-2;
     margin: 6rem 0 6rem 0;
-    h3 {
+    h1,
+    h2 {
       font-size: 3rem;
       margin-bottom: 1.25rem;
     }
