@@ -97,7 +97,7 @@ const AboutPage = () => (
       <TextBlock>
         <h3>Our company's history</h3>
         <p>
-          In 2005, we began with a vision of a construction company that treated
+          In 2015, we began with a vision of a construction company that treated
           all of its customers like family. We believe in being honest with our
           customers at every stage of a project.
         </p>
@@ -137,7 +137,7 @@ const AboutPage = () => (
         </p>
       </TextBlock>
     </AboutSection>
-    <StatsGrid>
+    {/* <StatsGrid>
       <StatsGrid.Stat>
         <h4>5</h4>
         <p>years serving southeastern Wisconsin</p>
@@ -154,7 +154,7 @@ const AboutPage = () => (
         <h4>16</h4>
         <p>something something something something</p>
       </StatsGrid.Stat>
-    </StatsGrid>
+    </StatsGrid> */}
     <Highlight reverse={true} />
   </Layout>
 )

@@ -16,20 +16,20 @@ const ServicePage = () => (
     <Masthead />
     <Section>
       <TextBlock>
-        <h3>Snow Removal</h3>
+        <h3>Snow Removal & Ice Management</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates
-          ex suscipit facilis dolorem quibusdam numquam cumque velit? Quidem
-          saepe necessitatibus et, aliquid illum consectetur error debitis
-          voluptatem in doloremque veniam.
+          Oak Ridge Contracting provices reliable, efficient, and safe snow
+          services in southeastern Wisconsin. We remain available 24 hours hours
+          a day, 7 days a week for snow and ice removal during the winter
+          season. We monitor each and every snowfall very closely to ensure that
+          our crew is ready to go and is on-site when necessary.
         </p>
         <blockquote>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut culpa
-          saepe fugit sed soluta amet earum deserunt fugiat veniam facilis?
+          We offer complimentary estimates for snow removal and ice management.
         </blockquote>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
-          mollitia?
+          We take pride in keeping all of our accounts clean before, during, and
+          after every winter storm.
         </p>
       </TextBlock>
       <ImageGroup>
@@ -41,17 +41,13 @@ const ServicePage = () => (
         </ImageGroup.Image>
       </ImageGroup>
       <TextBlock>
-        <h3>Interesting Title</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates
-          ex suscipit facilis dolorem quibusdam numquam cumque velit? Quidem
-          saepe necessitatibus et, aliquid illum consectetur error debitis
-          voluptatem in doloremque veniam.
-        </p>
-        <blockquote>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut culpa
-          saepe fugit sed soluta amet earum deserunt fugiat veniam facilis?
-        </blockquote>
+        <h3>Our Snow and Ice Services</h3>
+        <ul>
+          <li>Commercial and residential snow plowing</li>
+          <li>Sidewalk snow removal</li>
+          <li>Salting of lots and sidewalks</li>
+          <li>Sidewalk crew</li>
+        </ul>
       </TextBlock>
     </Section>
     <Highlight reverse="true" />

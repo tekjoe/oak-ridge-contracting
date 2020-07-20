@@ -10,6 +10,13 @@ const TextBlock = styled.div`
   p {
     margin-bottom: 1.25rem;
   }
+  ul {
+    list-style-position: inside;
+    li {
+      line-height: 150%;
+      color: ${({ theme }) => theme.darkGray};
+    }
+  }
   blockquote {
     font-size: 1.125rem;
     margin-bottom: 1.25rem;
@@ -25,6 +32,11 @@ const TextBlock = styled.div`
     h3 {
       font-size: 3rem;
       margin-bottom: 1.25rem;
+    }
+    ul {
+      li {
+        font-size: 1.125rem;
+      }
     }
   }
   @media (min-width: 1200px) {

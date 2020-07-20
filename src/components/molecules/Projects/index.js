@@ -63,6 +63,11 @@ CardGrid.Image = styled.div`
   }
 `
 
+CardGrid.Link = styled(Link)`
+  color: white;
+  text-decoration: none;
+`
+
 const CTA = styled(Link)`
   grid-column: 4 / span 6;
   background: #3088da;
@@ -105,25 +110,33 @@ export default () => {
         <CardGrid>
           <CardGrid.Image>
             <ImageOverlay>
-              <h5>Home Renovation</h5>
+              <h5>
+                <CardGrid.Link to="/renovations">Home Renovation</CardGrid.Link>
+              </h5>
             </ImageOverlay>
             <ImageRenovation style={{ height: "100%" }} />
           </CardGrid.Image>
           <CardGrid.Image>
             <ImageOverlay>
-              <h5>General Contracting</h5>
+              <h5>
+                <CardGrid.Link to="/general-contracting">
+                  General Contracting
+                </CardGrid.Link>
+              </h5>
             </ImageOverlay>
             <Image style={{ height: "100%" }} />
           </CardGrid.Image>
           <CardGrid.Image>
             <ImageOverlay>
-              <h5>Snow Removal</h5>
+              <h5>
+                <CardGrid.Link to="/snow-removal">Snow Removal</CardGrid.Link>
+              </h5>
             </ImageOverlay>
             <ImageSnow style={{ height: "100%" }} />
           </CardGrid.Image>
         </CardGrid>
       </Projects.Showcase>
-      <CTA to="/projects">More Projects</CTA>
+      <CTA to="/services">All Services</CTA>
     </Projects>
   )
 }

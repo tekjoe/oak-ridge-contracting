@@ -8,6 +8,9 @@ const ImageGroup = styled.div`
     grid-column: 2/-2;
     flex-direction: row;
   }
+  @media (min-width: 1920px) {
+    grid-column: 3/-3;
+  }
 `
 
 ImageGroup.Image = styled.div`

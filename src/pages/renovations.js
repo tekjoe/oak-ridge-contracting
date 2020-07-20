@@ -18,18 +18,20 @@ const ServicePage = () => (
       <TextBlock>
         <h3>Home Renovations</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates
-          ex suscipit facilis dolorem quibusdam numquam cumque velit? Quidem
-          saepe necessitatibus et, aliquid illum consectetur error debitis
-          voluptatem in doloremque veniam.
+          Starting a home renovation is an exciting endeavor, but it can also be
+          a stressful time. From a bathroom remodel to a complete dream home
+          renovation, Oak Ridge Contracting's team of skilled professionals
+          guides you through the entire process.
         </p>
         <blockquote>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut culpa
-          saepe fugit sed soluta amet earum deserunt fugiat veniam facilis?
+          We know you've been thinking about your remodel for a long time and
+          are ready to get started.
         </blockquote>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
-          mollitia?
+          No matter the size of your project, we take pride in our
+          craftsmanship, precision, and attention to detail. Our in person or
+          over-the-phone consultations ensure that our projects get started
+          without a hitch.
         </p>
       </TextBlock>
       <ImageGroup>
@@ -37,21 +39,26 @@ const ServicePage = () => (
           <ImageRenovation style={{ height: "100%" }} />
         </ImageGroup.Image>
         <ImageGroup.Image>
-          <Image />
+          <Image style={{ height: "100%" }} />
         </ImageGroup.Image>
       </ImageGroup>
       <TextBlock>
-        <h3>Interesting Title</h3>
+        <h3>Love Where You Live</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates
-          ex suscipit facilis dolorem quibusdam numquam cumque velit? Quidem
-          saepe necessitatibus et, aliquid illum consectetur error debitis
-          voluptatem in doloremque veniam.
+          Whether your project requires a bathroom renovation, a kitchen
+          remodel, or an entire new home addition, a well planned renovation can
+          revitalize the place that you've learned to call home.
         </p>
         <blockquote>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut culpa
-          saepe fugit sed soluta amet earum deserunt fugiat veniam facilis?
+          We use the best materials and we work closely with you to ensure that
+          your project is done with the highest quality and cost effectiveness
+          in mind.
         </blockquote>
+        <p>
+          We work hard to preserve the parts of your home that you love, while
+          enhancing the parts you don't. Our unique designs are focused on your
+          individual needs and desires.
+        </p>
       </TextBlock>
     </Section>
     <Highlight reverse="true" />

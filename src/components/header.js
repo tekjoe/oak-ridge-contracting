@@ -9,6 +9,10 @@ const Header = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  a.active {
+    border-bottom: 2px solid #3088da;
+    padding-bottom: 0.3rem;
+  }
   @media (min-width: 768px) {
     padding: 1rem 2rem;
   }
@@ -183,19 +187,24 @@ export default () => {
       <Nav>
         <ul>
           <li>
-            <Nav.Link to="/">Home</Nav.Link>
+            <Nav.Link to="/" activeClassName="active">
+              Home
+            </Nav.Link>
           </li>
           <li>
-            <Nav.Link to="/services">Services</Nav.Link>
-          </li>
-          {/* <li>
-            <Nav.Link to="/projects">Projects</Nav.Link>
-          </li> */}
-          <li>
-            <Nav.Link to="/about">About</Nav.Link>
+            <Nav.Link to="/services" activeClassName="active">
+              Services
+            </Nav.Link>
           </li>
           <li>
-            <Nav.Link to="/contact">Contact</Nav.Link>
+            <Nav.Link to="/about" activeClassName="active">
+              About
+            </Nav.Link>
+          </li>
+          <li>
+            <Nav.Link to="/contact" activeClassName="active">
+              Contact
+            </Nav.Link>
           </li>
         </ul>
       </Nav>
@@ -220,9 +229,6 @@ export default () => {
           <motion.li variants={item} whileTap={{ scale: 0.95 }}>
             <Nav.Link to="/services">Services</Nav.Link>
           </motion.li>
-          {/* <motion.li variants={item} whileTap={{ scale: 0.95 }}>
-            <Nav.Link to="/projects">Projects</Nav.Link>
-          </motion.li> */}
           <motion.li variants={item} whileTap={{ scale: 0.95 }}>
             <Nav.Link to="/about">About</Nav.Link>
           </motion.li>

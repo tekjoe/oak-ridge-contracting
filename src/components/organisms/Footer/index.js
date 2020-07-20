@@ -120,22 +120,22 @@ export default () => {
               <QuickLinks.Link to="/services">Services</QuickLinks.Link>
             </li>
             <li>
-              <QuickLinks.Link to="/projects">Projects</QuickLinks.Link>
+              <QuickLinks.Link to="/contact">Contact Us</QuickLinks.Link>
             </li>
-            <li></li>
           </ul>
           <ul>
             <li>
-              <QuickLinks.Link to="/">Home Renovations</QuickLinks.Link>
+              <QuickLinks.Link to="/general-contracting">
+                General Contracting
+              </QuickLinks.Link>
             </li>
             <li>
-              <QuickLinks.Link to="/">Kitchen Remodels</QuickLinks.Link>
+              <QuickLinks.Link to="/renovations">
+                Home Renovations
+              </QuickLinks.Link>
             </li>
             <li>
-              <QuickLinks.Link to="/">Exterior Renovations</QuickLinks.Link>
-            </li>
-            <li>
-              <QuickLinks.Link to="/">Landscaping</QuickLinks.Link>
+              <QuickLinks.Link to="/snow-removal">Snow Removal</QuickLinks.Link>
             </li>
           </ul>
         </QuickLinks.Links>

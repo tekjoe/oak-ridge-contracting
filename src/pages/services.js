@@ -152,10 +152,8 @@ const ServicesPage = () => {
             <h2>All Services</h2>
           </TitleGroup>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            tellus pellentesque vel a consectetur nullam amet gravida nibh.
-            Convallis volutpat mauris pharetra vel, eu, tellus. Mi, ipsum dui,
-            auctor duis. Aliquam, euismod lacinia tellus mattis.
+            No matter the size or budget of your project, we always deliver
+            outstanding customer service.
           </p>
         </ServicesIntro.Content>
       </ServicesIntro>
@@ -165,7 +163,7 @@ const ServicesPage = () => {
         initial={false}
       >
         <ServiceCard variants={item}>
-          <ServiceCard.Link to="/contracting">
+          <ServiceCard.Link to="/general-contracting">
             <ServiceCard.Icon>
               <SVGC>
                 <svg
@@ -181,9 +179,8 @@ const ServicesPage = () => {
             <h5>Services</h5>
             <h4>General Contracting</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              sagittis tincidunt orci lobortis mauris nulla velit dictum
-              viverra.
+              When it comes to professional general contracting in southeastern
+              Wisconsin, Oak Ridge Contracting is the name to know.
             </p>
           </ServiceCard.Link>
         </ServiceCard>
@@ -204,9 +201,8 @@ const ServicesPage = () => {
             <h5>Services</h5>
             <h4>Home Renovations</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              sagittis tincidunt orci lobortis mauris nulla velit dictum
-              viverra.
+              Give your home the beautiful, modern makeover of your dreams. It's
+              our responsibility to take your dream and make it a reality.
             </p>
           </ServiceCard.Link>
         </ServiceCard>
@@ -227,9 +223,8 @@ const ServicesPage = () => {
             <h5>Services</h5>
             <h4>Snow Removal</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              sagittis tincidunt orci lobortis mauris nulla velit dictum
-              viverra.
+              We offer residential and commercial snow and ice removal services
+              in southeastern Wisconsin. Stay safe this winter season.
             </p>
           </ServiceCard.Link>
         </ServiceCard>
