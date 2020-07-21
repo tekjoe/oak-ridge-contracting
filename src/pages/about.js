@@ -97,7 +97,7 @@ const AboutPage = () => (
         <Image style={{ width: "100%", height: "100%" }} />
       </AboutSection.FullwidthImage>
       <TextBlock>
-        <h3>Our company's history</h3>
+        <h1>Our company's history</h1>
         <p>
           In 2015, we began with a vision of a construction company that treated
           all of its customers like family. We believe in being honest with our
@@ -123,7 +123,7 @@ const AboutPage = () => (
         </ImageGroup.Image>
       </ImageGroup>
       <TextBlock>
-        <h3>Our Commitment</h3>
+        <h2>Our Commitment</h2>
         <p>
           The decision to add on, restore, or remodel your home or other
           building is no small task. We truly believe that our attention to

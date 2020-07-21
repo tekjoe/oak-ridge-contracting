@@ -52,6 +52,7 @@ CardGrid.Image = styled.div`
   width: 100%;
   position: relative;
   overflow: hidden;
+  height: 325px;
   @media (min-width: 768px) {
     height: 350px;
     &:nth-of-type(even) {

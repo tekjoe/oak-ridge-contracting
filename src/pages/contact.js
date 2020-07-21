@@ -10,6 +10,7 @@ import Textarea from "../components/atoms/Textarea"
 import Button from "../components/atoms/Button"
 
 import ReactMapboxGl from "react-mapbox-gl"
+import InputGroup from "../components/molecules/InputGroup"
 
 const apiKey = process.env.GATSBY_API_KEY
 
@@ -27,8 +28,8 @@ const Map = ReactMapboxGl({
 
 const ContactSection = styled(Section)`
   grid-gap: 1rem !important;
-  @media (min-width: 768px) {
-    grid-template-rows: repeat(2, 1fr);
+  @media (min-width: 1024px) {
+    grid-template-rows: repeat(2, minmax(auto, 1fr));
   }
 `
 
@@ -103,6 +104,9 @@ const ContactMap = styled.div`
   grid-row: span 1;
   background: #aadaff;
   height: 300px;
+  @media (min-width: 768px) {
+    height: 425px;
+  }
   @media (min-width: 1024px) {
     grid-column: span 6;
     height: 100%;
@@ -119,6 +123,24 @@ const MessageContainer = styled(motion.div)`
   h4 {
     margin-bottom: 0.5rem;
   }
+`
+
+const Select = styled.select`
+  flex-basis: 100%;
+  border: none;
+  margin-bottom: 1rem;
+  border-bottom: ${({ variant, theme }) =>
+    variant === "inverse"
+      ? `2px solid ${theme.darkGray}`
+      : "2px solid #c1c5d7"};
+  padding: 0.5rem 0;
+  background: transparent;
+  color: ${({ variant, theme }) =>
+    variant === "inverse" ? theme.darkGray : "#c1c5d7"};
+  font-size: 1rem;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border-radius: 0;
 `
 
 const ContactPage = () => {
@@ -156,7 +178,7 @@ const ContactPage = () => {
           </TitleGroup>
           <p>
             Interested in learning more about our services? Fill out the form
-            below or call us at (262) 424-3241.
+            below or call us at (262) 352-3963.
           </p>
           <AnimatePresence>
             {!submitted && (
@@ -171,27 +193,61 @@ const ContactPage = () => {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0, y: -50 }}
               >
-                <Input
-                  type="text"
-                  placeholder="Your Name"
-                  variant="inverse"
-                  name="name"
-                  onChange={handleChange}
-                />
-                <Input
-                  type="email"
-                  placeholder="Your Email"
-                  variant="inverse"
-                  name="email"
-                  onChange={handleChange}
-                />
-                <Textarea
-                  placeholder="Your Message"
-                  rows="5"
-                  variant="inverse"
-                  name="message"
-                  onChange={handleChange}
-                />
+                <InputGroup>
+                  <label htmlFor="name">Your Name</label>
+                  <Input
+                    type="text"
+                    variant="inverse"
+                    name="name"
+                    id="name"
+                    onChange={handleChange}
+                  />
+                </InputGroup>
+                <InputGroup>
+                  <label htmlFor="email">Your Email</label>
+                  <Input
+                    type="email"
+                    variant="inverse"
+                    name="email"
+                    id="email"
+                    onChange={handleChange}
+                  />
+                </InputGroup>
+                <InputGroup full>
+                  <label htmlFor="budget">Expected Budget</label>
+                  <Select
+                    id="budget"
+                    variant="inverse"
+                    required
+                    name="budget"
+                    onChange={handleChange}
+                  >
+                    <option value="" selected disabled hidden>
+                      Select here
+                    </option>
+                    <option value="< $5000">&lt; $5000</option>
+                    <option value="$5000 - $10,000">$5000 - $10,000</option>
+                    <option value="$10,000 - $20,000">$10,000 - $20,000</option>
+                    <option value="$20,000 - $30,000">$20,000 - $30,000</option>
+                    <option value="$30,000 - $40,000">$30,000 - $40,000</option>
+                    <option value="$40,000 - $60,000">$40,000 - $60,000</option>
+                    <option value="$60,000 - $80,000">$60,000 - $80,000</option>
+                    <option value="$80,000 - $100,000">
+                      $80,000 - $100,000
+                    </option>
+                    <option value="$100,000+">$100,000+</option>
+                  </Select>
+                </InputGroup>
+                <InputGroup full>
+                  <label>Your Message</label>
+                  <Textarea
+                    rows="5"
+                    variant="inverse"
+                    name="message"
+                    onChange={handleChange}
+                  />
+                </InputGroup>
+
                 <input type="hidden" name="form-name" value="contactForm" />
                 <Button
                   variant="inverse"
@@ -223,7 +279,7 @@ const ContactPage = () => {
               <strong>Address:</strong> P.O. Box 202 Palmyra, Wisconsin
             </li>
             <li>
-              <strong>Phone:</strong> 262-424-3241
+              <strong>Phone:</strong> 262-352-3963
             </li>
             <li>
               <strong>Email:</strong> info@oakridgecontracting.com

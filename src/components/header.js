@@ -210,7 +210,7 @@ export default () => {
         </ul>
       </Nav>
       <CTA>
-        <CTA.Phone href="tel:12624243241">+1-262-424-3241</CTA.Phone>
+        <CTA.Phone href="tel:2623523963">+1-262-352-3963</CTA.Phone>
         <CTA.Button to="/contact">Contact Us</CTA.Button>
       </CTA>
       <HamburgerButton onClick={toggleMenu}>
