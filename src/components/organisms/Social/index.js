@@ -1,10 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import TitleGroup from "../../atoms/TitleGroup"
-import IgImage1 from "../../atoms/IgImages/IgImage1"
-import IgImage2 from "../../atoms/IgImages/IgImage2"
-import IgImage3 from "../../atoms/IgImages/IgImage3"
-import IgImage4 from "../../atoms/IgImages/IgImage4"
+import Img from "gatsby-image"
 
 const Social = styled.section`
   display: grid;
@@ -74,7 +71,7 @@ const CTA = styled.a`
   }
 `
 
-export default () => {
+export default ({ instagramPosts }) => {
   return (
     <Social>
       <Social.Body>
@@ -84,18 +81,14 @@ export default () => {
         </TitleGroup>
       </Social.Body>
       <Social.Group>
-        <Social.Image>
-          <IgImage1 style={{ height: "100%" }} />
-        </Social.Image>
-        <Social.Image>
-          <IgImage2 style={{ height: "100%" }} />
-        </Social.Image>
-        <Social.Image>
-          <IgImage3 style={{ height: "100%" }} />
-        </Social.Image>
-        <Social.Image>
-          <IgImage4 style={{ height: "100%" }} />
-        </Social.Image>
+        {instagramPosts.map(post => (
+          <Social.Image key={post.node.id}>
+            <Img
+              style={{ height: "100%" }}
+              fluid={post.node.localFile.childImageSharp.fluid}
+            />
+          </Social.Image>
+        ))}
       </Social.Group>
       <CTA
         href="https://www.instagram.com/oakridge_contracting/"
