@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@browniebroke/gatsby-image-gallery": "^3.5.1",
     "babel-plugin-styled-components": "^1.10.7",
     "framer-motion": "^1.11.1",
     "gatsby": "^2.21.21",

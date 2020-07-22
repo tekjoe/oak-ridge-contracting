@@ -149,7 +149,7 @@ const ServicesPage = () => {
         <ServicesIntro.Content>
           <TitleGroup>
             <h3>Services</h3>
-            <h2>All Services</h2>
+            <h2>Our Services</h2>
           </TitleGroup>
           <p>
             No matter the size or budget of your project, we always deliver

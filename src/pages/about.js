@@ -131,7 +131,7 @@ const AboutPage = () => (
           competitors. Our commitment to the most professional standards means
           that we stand behind everything we do from start to finish.
         </p>
-        <h3>Fully Licensed</h3>
+        <h2>Fully Licensed</h2>
         <p>
           Having all the right licenses and permits ensures that a project can
           go smoothly. We are proud to be a licensed dwelling contractor, US DOT
