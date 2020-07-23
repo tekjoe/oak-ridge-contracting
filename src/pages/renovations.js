@@ -9,8 +9,31 @@ import ImageGroup from "../components/molecules/ImageGroup"
 import Image from "../components/atoms/Image"
 import ImageRenovation from "../components/atoms/ImageRenovation"
 import Highlight from "../components/organisms/Highlight"
+import PhotoGallery from "../components/organisms/PhotoGallery"
 
-const ServicePage = () => (
+export const query = graphql`
+  query ImagesForRenovation {
+    images: allFile(
+      filter: { relativeDirectory: { eq: "renovations" } }
+      sort: { fields: name }
+    ) {
+      edges {
+        node {
+          childImageSharp {
+            thumb: fluid(maxWidth: 270, maxHeight: 270) {
+              ...GatsbyImageSharpFluid
+            }
+            full: fluid(maxWidth: 1024) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  }
+`
+
+const ServicePage = ({ data }) => (
   <Layout>
     <SEO title="Home Renovations" />
     <Masthead />
@@ -61,6 +84,7 @@ const ServicePage = () => (
         </p>
       </TextBlock>
     </Section>
+    <PhotoGallery data={data} />
     <Highlight reverse="true" />
   </Layout>
 )

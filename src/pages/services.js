@@ -162,7 +162,7 @@ const ServicesPage = () => {
         variants={variants}
         initial={false}
       >
-        <ServiceCard variants={item}>
+        <ServiceCard variants={item} tabindex="0">
           <ServiceCard.Link to="/general-contracting">
             <ServiceCard.Icon>
               <SVGC>

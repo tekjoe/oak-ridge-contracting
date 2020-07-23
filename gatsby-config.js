@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Oak Ridge Contracting`,
     description: `Residential & Commercial Remodeling`,
-    author: `@gatsbyjs`,
+    author: `@tekjoe`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

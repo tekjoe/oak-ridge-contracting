@@ -12,7 +12,7 @@ import Highlight from "../components/organisms/Highlight"
 import PhotoGallery from "../components/organisms/PhotoGallery"
 
 export const query = graphql`
-  query ImagesForGallery {
+  query ImagesForSnowRemoval {
     images: allFile(
       filter: { relativeDirectory: { eq: "snow" } }
       sort: { fields: name }

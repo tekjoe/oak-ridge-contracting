@@ -12,6 +12,9 @@ const Input = styled.input`
   color: ${({ variant, theme }) =>
     variant === "inverse" ? theme.darkGray : "#c1c5d7"};
   font-size: 1rem;
+  &:focus {
+    outline: 2px dotted ${({ theme }) => theme.darkBlue};
+  }
 `
 
 export default props => {

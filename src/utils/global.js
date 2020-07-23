@@ -6,6 +6,9 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   };
+  *:focus {
+    outline: 2px dotted ${({ theme }) => theme.darkBlue};
+  }
   html {
     font-family: "Montserrat", 'Helvetica Neue', sans-serif;
     font-size: 1rem;

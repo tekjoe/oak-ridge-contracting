@@ -9,8 +9,31 @@ import ImageGroup from "../components/molecules/ImageGroup"
 import Image from "../components/atoms/Image"
 import ImageGenCon from "../components/atoms/ImageGenCon"
 import Highlight from "../components/organisms/Highlight"
+import PhotoGallery from "../components/organisms/PhotoGallery"
 
-const ServicePage = () => (
+export const query = graphql`
+  query ImagesForContracting {
+    images: allFile(
+      filter: { relativeDirectory: { eq: "contracting" } }
+      sort: { fields: name }
+    ) {
+      edges {
+        node {
+          childImageSharp {
+            thumb: fluid(maxWidth: 270, maxHeight: 270) {
+              ...GatsbyImageSharpFluid
+            }
+            full: fluid(maxWidth: 1024) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  }
+`
+
+const ServicePage = ({ data }) => (
   <Layout>
     <SEO title="General Contracting" />
     <Masthead />
@@ -58,6 +81,7 @@ const ServicePage = () => (
         </ul>
       </TextBlock>
     </Section>
+    <PhotoGallery data={data} />
     <Highlight reverse="true" />
   </Layout>
 )

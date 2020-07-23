@@ -14,6 +14,9 @@ const Textarea = styled.textarea`
     variant === "inverse" ? theme.darkGray : "#c1c5d7"};
   resize: none;
   font-family: inherit;
+  &:focus {
+    outline: 2px dotted ${({ theme }) => theme.darkBlue};
+  }
 `
 
 export default props => {

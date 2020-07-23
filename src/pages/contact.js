@@ -141,6 +141,9 @@ const Select = styled.select`
   -moz-appearance: none;
   -webkit-appearance: none;
   border-radius: 0;
+  &:focus {
+    outline: 2px dotted ${({ theme }) => theme.darkBlue};
+  }
 `
 
 const ContactPage = () => {
@@ -239,8 +242,9 @@ const ContactPage = () => {
                   </Select>
                 </InputGroup>
                 <InputGroup full>
-                  <label>Your Message</label>
+                  <label htmlFor="message">Your Message</label>
                   <Textarea
+                    id="message"
                     rows="5"
                     variant="inverse"
                     name="message"

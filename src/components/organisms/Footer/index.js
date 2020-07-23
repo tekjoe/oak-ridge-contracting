@@ -149,6 +149,8 @@ export default () => {
             <a
               href=" https://www.facebook.com/pg/oakridgecontracting/"
               target="_blank"
+              rel="noopener"
+              rel="noreferrer"
             >
               <svg
                 fill="none"
@@ -168,6 +170,8 @@ export default () => {
             <a
               href="https://www.instagram.com/oakridge_contracting/"
               target="_blank"
+              rel="noopener"
+              rel="noreferrer"
             >
               <svg
                 width="48"
