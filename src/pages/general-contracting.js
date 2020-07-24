@@ -43,8 +43,8 @@ const ServicePage = ({ data }) => (
         <p>
           At Oak Ridge Contracting, we pride ourselves on providing outstanding
           customer service to Waukesha County and surrounding areas. We work
-          hard hard to keep all of our projects on time and under budget. All of
-          our contracting services are customizable to your specific needs.
+          hard to keep all of our projects on time and under budget. All of our
+          contracting services are customizable to your specific needs.
         </p>
         <blockquote>
           As a local business in Waukesha County, we understand the importance
