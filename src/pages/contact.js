@@ -216,6 +216,16 @@ const ContactPage = () => {
                     onChange={handleChange}
                   />
                 </InputGroup>
+                <InputGroup>
+                  <label htmlFor="location">Your City</label>
+                  <Input
+                    type="text"
+                    variant="inverse"
+                    name="location"
+                    id="location"
+                    onChange={handleChange}
+                  />
+                </InputGroup>
                 <InputGroup full>
                   <label htmlFor="budget">Expected Budget</label>
                   <Select
