@@ -1,15 +1,15 @@
 import React from "react"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Section from "../components/molecules/Section"
-import Masthead from "../components/molecules/Masthead"
-import TextBlock from "../components/molecules/TextBlock"
-import ImageGroup from "../components/molecules/ImageGroup"
-import Image from "../components/atoms/Image"
-import ImageRenovation from "../components/atoms/ImageRenovation"
-import Highlight from "../components/organisms/Highlight"
-import PhotoGallery from "../components/organisms/PhotoGallery"
+import Layout from "../../components/layout"
+import SEO from "../../components/seo"
+import Section from "../../components/molecules/Section"
+import Masthead from "../../components/molecules/Masthead"
+import TextBlock from "../../components/molecules/TextBlock"
+import ImageGroup from "../../components/molecules/ImageGroup"
+import Image from "../../components/atoms/Image"
+import ImageRenovation from "../../components/atoms/ImageRenovation"
+import Highlight from "../../components/organisms/Highlight"
+import PhotoGallery from "../../components/organisms/PhotoGallery"
 
 export const query = graphql`
   query ImagesForRenovation {
@@ -35,7 +35,7 @@ export const query = graphql`
 
 const ServicePage = ({ data }) => (
   <Layout>
-    <SEO title="Home Renovations" />
+    <SEO title="Waukesha and Jefferson County Remodling, Renovations, and Additions" />
     <Masthead />
     <Section>
       <TextBlock>

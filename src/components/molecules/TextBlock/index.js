@@ -13,6 +13,7 @@ const TextBlock = styled.div`
   }
   ul {
     list-style-position: inside;
+    margin-bottom: 2rem;
     li {
       line-height: 150%;
       color: ${({ theme }) => theme.darkGray};

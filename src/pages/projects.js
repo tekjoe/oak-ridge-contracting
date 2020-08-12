@@ -71,7 +71,7 @@ const Partner = styled.div`
 
 const ProjectsPage = () => (
   <Layout>
-    <SEO title="Projects" />
+    <SEO title="Waukesha and Jefferson County Residential and Commercial Remodeling" />
     <ProjectsIntro>
       <ProjectsIntro.Content>
         <TitleGroup>

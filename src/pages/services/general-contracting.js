@@ -1,15 +1,15 @@
 import React from "react"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Section from "../components/molecules/Section"
-import Masthead from "../components/molecules/Masthead"
-import TextBlock from "../components/molecules/TextBlock"
-import ImageGroup from "../components/molecules/ImageGroup"
-import Image from "../components/atoms/Image"
-import ImageGenCon from "../components/atoms/ImageGenCon"
-import Highlight from "../components/organisms/Highlight"
-import PhotoGallery from "../components/organisms/PhotoGallery"
+import Layout from "../../components/layout"
+import SEO from "../../components/seo"
+import Section from "../../components/molecules/Section"
+import Masthead from "../../components/molecules/Masthead"
+import TextBlock from "../../components/molecules/TextBlock"
+import ImageGroup from "../../components/molecules/ImageGroup"
+import Image from "../../components/atoms/Image"
+import ImageGenCon from "../../components/atoms/ImageGenCon"
+import Highlight from "../../components/organisms/Highlight"
+import PhotoGallery from "../../components/organisms/PhotoGallery"
 
 export const query = graphql`
   query ImagesForContracting {
@@ -35,7 +35,7 @@ export const query = graphql`
 
 const ServicePage = ({ data }) => (
   <Layout>
-    <SEO title="General Contracting" />
+    <SEO title="Oak Ridge Contracting – Waukesha and Jefferson County General Contractor" />
     <Masthead />
     <Section>
       <TextBlock>

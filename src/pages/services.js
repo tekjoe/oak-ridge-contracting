@@ -144,7 +144,7 @@ const ServicesPage = () => {
   }
   return (
     <Layout>
-      <SEO title="Our Services" />
+      <SEO title="Waukesha and Jefferson County General Contractor Services" />
       <ServicesIntro>
         <ServicesIntro.Content>
           <TitleGroup>
@@ -163,7 +163,7 @@ const ServicesPage = () => {
         initial={false}
       >
         <ServiceCard variants={item} tabindex="0">
-          <ServiceCard.Link to="/general-contracting">
+          <ServiceCard.Link to="/services/general-contracting">
             <ServiceCard.Icon>
               <SVGC>
                 <svg
@@ -185,7 +185,7 @@ const ServicesPage = () => {
           </ServiceCard.Link>
         </ServiceCard>
         <ServiceCard variants={item}>
-          <ServiceCard.Link to="/renovations">
+          <ServiceCard.Link to="/services/renovations">
             <ServiceCard.Icon>
               <SVGC>
                 <svg
@@ -207,7 +207,7 @@ const ServicesPage = () => {
           </ServiceCard.Link>
         </ServiceCard>
         <ServiceCard variants={item}>
-          <ServiceCard.Link to="/snow-removal">
+          <ServiceCard.Link to="/services/snow-removal">
             <ServiceCard.Icon>
               <SVGC>
                 <svg
@@ -225,6 +225,28 @@ const ServicesPage = () => {
             <p>
               We offer residential and commercial snow and ice removal services
               in southeastern Wisconsin. Stay safe this winter season.
+            </p>
+          </ServiceCard.Link>
+        </ServiceCard>
+        <ServiceCard variants={item} tabindex="0">
+          <ServiceCard.Link to="/services/roofing-siding-and-windows">
+            <ServiceCard.Icon>
+              <SVGC>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="#fff"
+                >
+                  <path d="M6.47 9.8A5 5 0 0 1 .2 3.22l3.95 3.95 2.82-2.83L3.03.41a5 5 0 0 1 6.4 6.68l10 10-2.83 2.83L6.47 9.8z" />
+                </svg>
+              </SVGC>
+            </ServiceCard.Icon>
+            <ServiceCard.Line />
+            <h5>Services</h5>
+            <h4>Roofing, Siding, Windows</h4>
+            <p>
+              Give your home a stunning new look with durable roofing, siding,
+              or windows, without breaking the bank.
             </p>
           </ServiceCard.Link>
         </ServiceCard>
