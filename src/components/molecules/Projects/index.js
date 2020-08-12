@@ -112,7 +112,9 @@ export default () => {
           <CardGrid.Image>
             <ImageOverlay>
               <h5>
-                <CardGrid.Link to="/renovations">Home Renovation</CardGrid.Link>
+                <CardGrid.Link to="/services/renovations">
+                  Home Renovation
+                </CardGrid.Link>
               </h5>
             </ImageOverlay>
             <ImageRenovation style={{ height: "100%" }} />
@@ -120,7 +122,7 @@ export default () => {
           <CardGrid.Image>
             <ImageOverlay>
               <h5>
-                <CardGrid.Link to="/general-contracting">
+                <CardGrid.Link to="/services/general-contracting">
                   General Contracting
                 </CardGrid.Link>
               </h5>
@@ -130,7 +132,9 @@ export default () => {
           <CardGrid.Image>
             <ImageOverlay>
               <h5>
-                <CardGrid.Link to="/snow-removal">Snow Removal</CardGrid.Link>
+                <CardGrid.Link to="/services/snow-removal">
+                  Snow Removal
+                </CardGrid.Link>
               </h5>
             </ImageOverlay>
             <ImageSnow style={{ height: "100%" }} />
