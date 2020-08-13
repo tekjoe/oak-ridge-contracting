@@ -123,17 +123,24 @@ export default () => {
           </ul>
           <ul>
             <li>
-              <QuickLinks.Link to="/general-contracting">
+              <QuickLinks.Link to="/services/general-contracting">
                 General Contracting
               </QuickLinks.Link>
             </li>
             <li>
-              <QuickLinks.Link to="/renovations">
+              <QuickLinks.Link to="/services/renovations">
                 Home Renovations
               </QuickLinks.Link>
             </li>
             <li>
-              <QuickLinks.Link to="/snow-removal">Snow Removal</QuickLinks.Link>
+              <QuickLinks.Link to="/services/snow-removal">
+                Snow Removal
+              </QuickLinks.Link>
+            </li>
+            <li>
+              <QuickLinks.Link to="/services/roofing-siding-and-windows">
+                Roofing, Siding, and Windows
+              </QuickLinks.Link>
             </li>
           </ul>
         </QuickLinks.Links>
