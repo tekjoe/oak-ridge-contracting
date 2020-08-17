@@ -3,6 +3,7 @@ module.exports = {
     title: `Oak Ridge Contracting`,
     description: `Residential & Commercial Remodeling`,
     author: `@tekjoe`,
+    siteUrl: "https://www.oakridgecontracting.com",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
