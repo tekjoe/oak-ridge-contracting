@@ -65,7 +65,7 @@ const ServicePage = ({ data }) => (
         </ImageGroup.Image>
       </ImageGroup>
       <TextBlock>
-        <h2>Roofing Replacment & Installation</h2>
+        <h2>Roofing Replacement & Installation</h2>
         <p>
           Our team of professional roofing contractors in Waukesha and Jefferson
           County are experienced at roof repair, roof replacement, and new roof

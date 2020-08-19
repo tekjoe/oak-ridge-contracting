@@ -93,8 +93,9 @@ export default ({ instagramPosts }) => {
       <CTA
         href="https://www.instagram.com/oakridge_contracting/"
         target="_blank"
+        rel="noreferrer noopener"
       >
-        See More
+        View on Instagram
       </CTA>
     </Social>
   )
