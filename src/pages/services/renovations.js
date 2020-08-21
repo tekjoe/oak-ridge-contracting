@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import Section from "../../components/molecules/Section"
-import Masthead from "../../components/molecules/Masthead"
+
 import TextBlock from "../../components/molecules/TextBlock"
 import ImageGroup from "../../components/molecules/ImageGroup"
 import Image from "../../components/atoms/Image"
@@ -35,8 +35,10 @@ export const query = graphql`
 
 const ServicePage = ({ data }) => (
   <Layout>
-    <SEO title="Waukesha and Jefferson County Remodling, Renovations, and Additions" />
-    <Masthead />
+    <SEO
+      title="Remodling, Renovations, and Additions in Waukesha County"
+      description="Waukesha and Jefferson County's top home renovation and home remodeling services. Basement, Bathroom, or Kitchen - no job is too big or too small."
+    />
     <Section>
       <TextBlock>
         <h1>Home Renovations</h1>
@@ -80,8 +82,16 @@ const ServicePage = ({ data }) => (
         <p>
           We work hard to preserve the parts of your home that you love, while
           enhancing the parts you don't. Our unique designs are focused on your
-          individual needs and desires.
+          individual needs and desires. We specialize in:
         </p>
+        <ul>
+          <li>Kitchen Renovations</li>
+          <li>Bathroom Renovations</li>
+          <li>Basement Renovations</li>
+          <li>Additions</li>
+          <li>Mudrooms</li>
+          <li>Detached Garages</li>
+        </ul>
       </TextBlock>
     </Section>
     <PhotoGallery data={data} />

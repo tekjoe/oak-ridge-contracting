@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Oak Ridge Contracting`,
-    description: `Residential & Commercial Remodeling`,
+    description: `Oak Ridge Contracting is the top home renovation and home remodeling contractor in Waukesha County and Jefferson County. We make your vision a reality.`,
     author: `@tekjoe`,
     siteUrl: "https://www.oakridgecontracting.com",
   },

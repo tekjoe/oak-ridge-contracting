@@ -27,6 +27,9 @@ const TextBlock = styled.div`
     padding-left: 1rem;
     border-left: 3px solid #3088da;
   }
+  &:first-of-type {
+    margin-top: 0;
+  }
   @media (min-width: 768px) {
     margin-top: 6rem;
     grid-column: 2/-2;

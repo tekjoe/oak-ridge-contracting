@@ -144,7 +144,7 @@ const ServicesPage = () => {
   }
   return (
     <Layout>
-      <SEO title="Waukesha and Jefferson County General Contractor Services" />
+      <SEO title="General Contractor Services in Waukesha and Jefferson County " />
       <ServicesIntro>
         <ServicesIntro.Content>
           <TitleGroup>

@@ -30,7 +30,10 @@ export const query = graphql`
 const IndexPage = ({ data }) => {
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO
+        title="Waukesha County and Jefferson County's top home renovation and home remodeling contractor."
+        description="Oak Ridge Contracting is the top home renovation and home remodeling contractor in Waukesha County and Jefferson County. We make your vision a reality."
+      />
       <Masthead />
       <Projects />
       <Advantages />

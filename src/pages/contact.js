@@ -304,6 +304,7 @@ const ContactPage = () => {
           <Map
             style="mapbox://styles/tekjoe/ck558iss20d681cqeyj4u2ov6"
             center={[-88.288519, 43.015604]}
+            zoom={[10]}
             containerStyle={{
               height: "100%",
               width: "100%",

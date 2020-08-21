@@ -3,6 +3,7 @@ export const lightTheme = {
   color: "#1F1F1F",
   elementBackground: "#203a4b",
   darkBlue: "hsl(230,21%,23%)",
+  blue: "#3088da",
   darkGray: "#34323d",
   lightGray: "#c2c9d8",
   cyan: "#98cabf",

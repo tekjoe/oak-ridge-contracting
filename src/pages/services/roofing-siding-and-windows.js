@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import Section from "../../components/molecules/Section"
-import Masthead from "../../components/molecules/Masthead"
+
 import TextBlock from "../../components/molecules/TextBlock"
 import ImageGroup from "../../components/molecules/ImageGroup"
 import ImageSiding from "../../components/atoms/ImageSiding"
@@ -35,8 +35,10 @@ export const query = graphql`
 
 const ServicePage = ({ data }) => (
   <Layout>
-    <SEO title="Waukesha and Jefferson County Roofing and Siding Contractor" />
-    <Masthead />
+    <SEO
+      title="Roofing, Siding, and Window Contractor in Waukesha County"
+      description="Waukesha County and Jefferson County's top roofing, siding, and window services. Repair, replacement, and installation - no job is too big or too small."
+    />
     <Section>
       <TextBlock>
         <h1>Roofing, Siding, and Windows</h1>

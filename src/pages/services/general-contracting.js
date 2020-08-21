@@ -3,7 +3,6 @@ import React from "react"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import Section from "../../components/molecules/Section"
-import Masthead from "../../components/molecules/Masthead"
 import TextBlock from "../../components/molecules/TextBlock"
 import ImageGroup from "../../components/molecules/ImageGroup"
 import Image from "../../components/atoms/Image"
@@ -35,8 +34,7 @@ export const query = graphql`
 
 const ServicePage = ({ data }) => (
   <Layout>
-    <SEO title="Oak Ridge Contracting – Waukesha and Jefferson County General Contractor" />
-    <Masthead />
+    <SEO title="General Contractor in Waukesha County and Jefferson County" />
     <Section>
       <TextBlock>
         <h1>General Contracting</h1>
@@ -73,11 +71,20 @@ const ServicePage = ({ data }) => (
           the fields of:
         </p>
         <ul>
+          <li>Architectural and Design Services</li>
           <li>Carpentry</li>
           <li>Electrical</li>
           <li>Plumbing</li>
           <li>HVAC</li>
-          <li>Design & Architecture</li>
+          <li>Drywall Installation and Repair</li>
+          <li>Painting</li>
+          <li>Masonry</li>
+          <li>Gutter Installation</li>
+          <li>Epoxy Flooring</li>
+          <li>Grading and Excavation</li>
+          <li>Landscaping</li>
+          <li>Flooring – Tile, Carpet, Hardwood, LVT</li>
+          <li>Countertop Replacement and Installation</li>
         </ul>
       </TextBlock>
     </Section>

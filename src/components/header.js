@@ -87,13 +87,17 @@ CTA.Phone = styled.a`
 
 CTA.Button = styled(Link)`
   text-transform: uppercase;
-  background: #3088da;
+  background: ${({ theme }) => theme.darkBlue};
   font-size: 0.8rem;
   padding: 1rem;
   color: white;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: bold;
   letter-spacing: 2px;
+  transition: background 0.3s;
+  &:hover {
+    background: ${({ theme }) => theme.blue};
+  }
 `
 
 const HamburgerButton = styled.a`

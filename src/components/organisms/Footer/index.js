@@ -21,9 +21,12 @@ const Footer = styled.footer`
 const QuickLinks = styled.div`
   grid-column: 1 / -1;
   margin-bottom: 3rem;
-  h4 {
+  p.footer__title {
     margin-bottom: 2rem;
     font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    line-height: 1;
   }
   ul {
     list-style-type: none;
@@ -37,7 +40,7 @@ const QuickLinks = styled.div`
     padding-left: 2rem;
   }
   @media (min-width: 1024px) {
-    h4 {
+    p.footer__title {
       font-size: ${({ theme }) => theme.typography.h4};
     }
   }
@@ -64,9 +67,12 @@ QuickLinks.Link = styled(Link)`
 
 const Contact = styled.div`
   grid-column: 1/-1;
-  h4 {
+  p.footer__title {
     margin-bottom: 2rem;
     font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    line-height: 1;
   }
   p {
     color: #c1c5d7;
@@ -78,7 +84,7 @@ const Contact = styled.div`
     padding-right: 2rem;
   }
   @media (min-width: 1024px) {
-    h4 {
+    p.footer__title {
       font-size: ${({ theme }) => theme.typography.h4};
     }
   }
@@ -105,7 +111,7 @@ export default () => {
   return (
     <Footer>
       <QuickLinks>
-        <h4>Quick Links</h4>
+        <p className="footer__title">Quick Links</p>
         <QuickLinks.Links>
           <ul>
             <li>
@@ -146,7 +152,7 @@ export default () => {
         </QuickLinks.Links>
       </QuickLinks>
       <Contact>
-        <h4>Connect With Us</h4>
+        <p className="footer__title">Connect With Us</p>
         <p>
           To see more of our work, take a look at our Instagram and Facebook
           pages.
@@ -158,6 +164,7 @@ export default () => {
               target="_blank"
               rel="noopener"
               rel="noreferrer"
+              aria-label="Facebook"
             >
               <svg
                 fill="none"
@@ -179,6 +186,7 @@ export default () => {
               target="_blank"
               rel="noopener"
               rel="noreferrer"
+              aria-label="Instagram"
             >
               <svg
                 width="48"

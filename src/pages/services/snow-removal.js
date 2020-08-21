@@ -3,7 +3,6 @@ import React from "react"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import Section from "../../components/molecules/Section"
-import Masthead from "../../components/molecules/Masthead"
 import TextBlock from "../../components/molecules/TextBlock"
 import ImageGroup from "../../components/molecules/ImageGroup"
 import ImageSnow from "../../components/atoms/ImageSnow"
@@ -37,10 +36,9 @@ const ServicePage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Snow Removal" />
-      <Masthead />
       <Section>
         <TextBlock>
-          <h1>Snow Removal & Ice Management</h1>
+          <h1>Snow Plowing and Snow Removal</h1>
           <p>
             Oak Ridge Contracting provices reliable, efficient, and safe snow
             services in southeastern Wisconsin. We remain available 24 hours
@@ -66,7 +64,7 @@ const ServicePage = ({ data }) => {
           </ImageGroup.Image>
         </ImageGroup>
         <TextBlock>
-          <h2>Our Snow and Ice Services</h2>
+          <h2>Snow Removal and Ice Removal Services</h2>
           <ul>
             <li>Commercial and residential snow plowing</li>
             <li>Sidewalk snow removal</li>

@@ -5,7 +5,7 @@ import ImageSnow from "../../atoms/ImageSnow"
 import ImageRenovation from "../../atoms/ImageRenovation"
 import ImageOverlay from "../../atoms/ImageOverlay"
 import { Link } from "gatsby"
-
+import ServicesGrid from "../../organisms/ServicesGrid"
 import TitleGroup from "../../atoms/TitleGroup"
 
 const Projects = styled.section`
@@ -107,7 +107,8 @@ export default () => {
           and beyond your expectations.
         </p>
       </Projects.Body>
-      <Projects.Showcase>
+      <ServicesGrid />
+      {/* <Projects.Showcase>
         <CardGrid>
           <CardGrid.Image>
             <ImageOverlay>
@@ -140,7 +141,7 @@ export default () => {
             <ImageSnow style={{ height: "100%" }} />
           </CardGrid.Image>
         </CardGrid>
-      </Projects.Showcase>
+      </Projects.Showcase> */}
       <CTA to="/services">All Services</CTA>
     </Projects>
   )
