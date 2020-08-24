@@ -167,28 +167,6 @@ const ServicesGrid = () => {
       variants={variants}
       initial={false}
     >
-      <ServiceCard variants={item} tabindex="0">
-        <ServiceCard.Link to="/services/general-contracting">
-          <ServiceCard.Icon>
-            <SVGC>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="#fff"
-              >
-                <path d="M6.47 9.8A5 5 0 0 1 .2 3.22l3.95 3.95 2.82-2.83L3.03.41a5 5 0 0 1 6.4 6.68l10 10-2.83 2.83L6.47 9.8z" />
-              </svg>
-            </SVGC>
-          </ServiceCard.Icon>
-          <ServiceCard.Line />
-          <ServiceCard.Subtitle>Services</ServiceCard.Subtitle>
-          <ServiceCard.Title>General Contracting</ServiceCard.Title>
-          <p>
-            When it comes to professional general contracting in southeastern
-            Wisconsin, Oak Ridge Contracting is the name to know.
-          </p>
-        </ServiceCard.Link>
-      </ServiceCard>
       <ServiceCard variants={item}>
         <ServiceCard.Link to="/services/renovations">
           <ServiceCard.Icon>
@@ -211,28 +189,6 @@ const ServicesGrid = () => {
           </p>
         </ServiceCard.Link>
       </ServiceCard>
-      <ServiceCard variants={item}>
-        <ServiceCard.Link to="/services/snow-removal">
-          <ServiceCard.Icon>
-            <SVGC>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="#fff"
-              >
-                <path d="M16.88 9.1A4 4 0 0 1 16 17H5a5 5 0 0 1-1-9.9V7a3 3 0 0 1 4.52-2.59A4.98 4.98 0 0 1 17 8c0 .38-.04.74-.12 1.1z" />
-              </svg>
-            </SVGC>
-          </ServiceCard.Icon>
-          <ServiceCard.Line />
-          <ServiceCard.Subtitle>Services</ServiceCard.Subtitle>
-          <ServiceCard.Title>Snow Removal</ServiceCard.Title>
-          <p>
-            We offer residential and commercial snow and ice removal services in
-            southeastern Wisconsin. Stay safe this winter season.
-          </p>
-        </ServiceCard.Link>
-      </ServiceCard>
       <ServiceCard variants={item} tabindex="0">
         <ServiceCard.Link to="/services/roofing-siding-and-windows">
           <ServiceCard.Icon>
@@ -252,6 +208,51 @@ const ServicesGrid = () => {
           <p>
             Give your home a stunning new look with durable roofing, siding, or
             windows, without breaking the bank.
+          </p>
+        </ServiceCard.Link>
+      </ServiceCard>
+      <ServiceCard variants={item} tabindex="0">
+        <ServiceCard.Link to="/services/general-contracting">
+          <ServiceCard.Icon>
+            <SVGC>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="#fff"
+              >
+                <path d="M6.47 9.8A5 5 0 0 1 .2 3.22l3.95 3.95 2.82-2.83L3.03.41a5 5 0 0 1 6.4 6.68l10 10-2.83 2.83L6.47 9.8z" />
+              </svg>
+            </SVGC>
+          </ServiceCard.Icon>
+          <ServiceCard.Line />
+          <ServiceCard.Subtitle>Services</ServiceCard.Subtitle>
+          <ServiceCard.Title>General Contracting</ServiceCard.Title>
+          <p>
+            When it comes to professional general contracting in southeastern
+            Wisconsin, Oak Ridge Contracting is the name to know.
+          </p>
+        </ServiceCard.Link>
+      </ServiceCard>
+
+      <ServiceCard variants={item}>
+        <ServiceCard.Link to="/services/snow-removal">
+          <ServiceCard.Icon>
+            <SVGC>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="#fff"
+              >
+                <path d="M16.88 9.1A4 4 0 0 1 16 17H5a5 5 0 0 1-1-9.9V7a3 3 0 0 1 4.52-2.59A4.98 4.98 0 0 1 17 8c0 .38-.04.74-.12 1.1z" />
+              </svg>
+            </SVGC>
+          </ServiceCard.Icon>
+          <ServiceCard.Line />
+          <ServiceCard.Subtitle>Services</ServiceCard.Subtitle>
+          <ServiceCard.Title>Snow Removal</ServiceCard.Title>
+          <p>
+            We offer residential and commercial snow and ice removal services in
+            southeastern Wisconsin. Stay safe this winter season.
           </p>
         </ServiceCard.Link>
       </ServiceCard>

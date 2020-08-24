@@ -9,7 +9,7 @@ const Image = ({ style, imgStyle }) => {
         relativePath: { eq: "oak_ridge_logo_transparent.png" }
       ) {
         childImageSharp {
-          fluid(maxWidth: 1500) {
+          fluid(maxWidth: 150) {
             ...GatsbyImageSharpFluid_tracedSVG
           }
         }
