@@ -5,7 +5,7 @@ import ImageSnow from "../../atoms/ImageSnow"
 import ImageRenovation from "../../atoms/ImageRenovation"
 import ImageOverlay from "../../atoms/ImageOverlay"
 import { Link } from "gatsby"
-import ServicesGrid from "../../organisms/ServicesGrid"
+import ServicesGrid from "../ServicesGrid"
 import TitleGroup from "../../atoms/TitleGroup"
 
 const Projects = styled.section`

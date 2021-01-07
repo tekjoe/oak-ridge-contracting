@@ -40,7 +40,7 @@ const ServicePage = ({ data }) => {
         <TextBlock>
           <h1>Snow Plowing and Snow Removal</h1>
           <p>
-            Oak Ridge Contracting provices reliable, efficient, and safe snow
+            Oak Ridge Contracting provides reliable, efficient, and safe snow
             services in southeastern Wisconsin. We remain available 24 hours
             hours a day, 7 days a week for snow and ice removal during the
             winter season. We monitor each and every snowfall very closely to

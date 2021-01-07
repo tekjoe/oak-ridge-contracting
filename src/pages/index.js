@@ -3,10 +3,11 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Masthead from "../components/molecules/Masthead"
-import Projects from "../components/molecules/Projects"
+import Projects from "../components/organisms/Projects"
 import Advantages from "../components/organisms/Advantages"
 import Highlight from "../components/organisms/Highlight"
 import Social from "../components/organisms/Social"
+import VideoPlayer from "../components/molecules/VideoPlayer"
 
 export const query = graphql`
   {
@@ -35,6 +36,7 @@ const IndexPage = ({ data }) => {
         description="Oak Ridge Contracting is the top home renovation and home remodeling contractor in Waukesha County and Jefferson County. We make your vision a reality."
       />
       <Masthead />
+      <VideoPlayer />
       <Projects />
       <Advantages />
       <Highlight reverse={false} />

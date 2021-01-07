@@ -28,6 +28,7 @@
     "react-helmet": "^6.0.0",
     "react-hook-intersection-observer": "^0.1.0",
     "react-mapbox-gl": "^4.8.6",
+    "react-player": "^2.7.2",
     "styled-components": "^5.1.0"
   },
   "devDependencies": {
