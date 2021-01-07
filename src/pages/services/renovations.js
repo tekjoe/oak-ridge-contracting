@@ -1,9 +1,8 @@
 import React from "react"
-
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import Section from "../../components/molecules/Section"
-
+import { graphql } from "gatsby"
 import TextBlock from "../../components/molecules/TextBlock"
 import ImageGroup from "../../components/molecules/ImageGroup"
 import Image from "../../components/atoms/Image"

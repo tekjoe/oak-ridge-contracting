@@ -10,6 +10,7 @@ import ImageSiding from "../../components/atoms/ImageSiding"
 import ImageRoofing from "../../components/atoms/ImageRoofing"
 import Highlight from "../../components/organisms/Highlight"
 import PhotoGallery from "../../components/organisms/PhotoGallery"
+import { graphql } from "gatsby"
 
 export const query = graphql`
   query ImagesForRoofing {

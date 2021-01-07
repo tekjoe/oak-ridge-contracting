@@ -1,7 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import Input from "../../atoms/Input"
-import Button from "../../atoms/Button"
 import { Link } from "gatsby"
 
 const Footer = styled.footer`
@@ -162,8 +160,7 @@ export default () => {
             <a
               href=" https://www.facebook.com/pg/oakridgecontracting/"
               target="_blank"
-              rel="noopener"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               aria-label="Facebook"
             >
               <svg
@@ -184,8 +181,7 @@ export default () => {
             <a
               href="https://www.instagram.com/oakridge_contracting/"
               target="_blank"
-              rel="noopener"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               aria-label="Instagram"
             >
               <svg
