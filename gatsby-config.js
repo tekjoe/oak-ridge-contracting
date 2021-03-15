@@ -12,13 +12,19 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/images/`,
       },
     },
     {
       resolve: `gatsby-source-instagram`,
       options: {
         username: `484969899`,
+      },
+    },
+    {
+      resolve: `gatsby-source-instagram-all`,
+      options: {
+        access_token: process.env.GATSBY_IG_KEY,
       },
     },
     `gatsby-transformer-sharp`,
@@ -45,6 +51,7 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         // This path is relative to the root of the site.
+        icon: `src/images/icon.png`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

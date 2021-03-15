@@ -9,9 +9,28 @@ import Highlight from "../components/organisms/Highlight"
 import Social from "../components/organisms/Social"
 import VideoPlayer from "../components/molecules/VideoPlayer"
 
+// export const query = graphql`
+//   {
+//     allInstagramContent {
+//       edges {
+//         node {
+//           id
+//           permalink
+//           localImage {
+//             childImageSharp {
+//               fluid {
+//                 ...GatsbyImageSharpFluid_tracedSVG
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// `
 export const query = graphql`
   {
-    allInstaNode(sort: { fields: timestamp, order: DESC }, limit: 4) {
+    allInstaNode(limit: 4) {
       edges {
         node {
           id
