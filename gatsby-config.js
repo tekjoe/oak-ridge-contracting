@@ -21,12 +21,6 @@ module.exports = {
         username: `484969899`,
       },
     },
-    {
-      resolve: `gatsby-source-instagram-all`,
-      options: {
-        access_token: process.env.GATSBY_IG_KEY,
-      },
-    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
