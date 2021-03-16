@@ -29,9 +29,6 @@ module.exports = {
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-styled-components`,
-      options: {
-        displayName: true,
-      },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
