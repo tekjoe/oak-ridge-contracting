@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `Oak Ridge Contracting`,
@@ -16,9 +20,9 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-instagram`,
+      resolve: `gatsby-source-instagram-all`,
       options: {
-        username: `484969899`,
+        access_token: process.env.GATSBY_IG_KEY,
       },
     },
     `gatsby-transformer-sharp`,

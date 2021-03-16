@@ -85,7 +85,7 @@ export default ({ instagramPosts }) => {
           <Social.Image key={post.node.id}>
             <Img
               style={{ height: "100%" }}
-              fluid={post.node.localFile.childImageSharp.fluid}
+              fluid={post.node.localImage.childImageSharp.fluid}
             />
           </Social.Image>
         ))}
