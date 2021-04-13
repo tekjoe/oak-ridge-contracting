@@ -45,7 +45,7 @@ export default () => {
       <VideoPlayer.Body>
         <TitleGroup>
           <h3>Commercial & Residential</h3>
-          <h2>Snow Removal</h2>
+          <h2>Roofing Services</h2>
         </TitleGroup>
       </VideoPlayer.Body>
       <PlayerWrapper>
