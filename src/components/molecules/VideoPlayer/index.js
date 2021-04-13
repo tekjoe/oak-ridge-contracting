@@ -50,7 +50,7 @@ export default () => {
       </VideoPlayer.Body>
       <PlayerWrapper>
         <ReactPlayer
-          url="https://www.youtube.com/watch?v=rI5oJkUeVl8&feature=youtu.be"
+          url="https://www.youtube.com/watch?v=qQAXQ8L6MGM"
           width="100%"
           height="100%"
         />
