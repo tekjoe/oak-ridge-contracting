@@ -68,6 +68,7 @@ ServiceCard.Link = styled(Link)`
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  height: 100%;
   h5 {
     color: #3088da;
     text-transform: uppercase;
@@ -148,7 +149,7 @@ const ServicesPage = () => {
       <ServicesIntro>
         <ServicesIntro.Content>
           <TitleGroup>
-            <h3>Services</h3>
+            <p>Services</p>
             <h2>Our Services</h2>
           </TitleGroup>
           <p>

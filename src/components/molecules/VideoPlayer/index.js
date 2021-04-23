@@ -31,7 +31,6 @@ const PlayerWrapper = styled.div`
     height: 300px;
   }
   @media (min-width: 1024px) {
-    grid-column: 4/-4;
     height: 350px;
   }
   @media (min-width: 1200px) {
@@ -39,21 +38,19 @@ const PlayerWrapper = styled.div`
   }
 `
 
-export default () => {
+export default ({ title, subtitle, url }) => {
   return (
     <VideoPlayer>
       <VideoPlayer.Body>
-        <TitleGroup>
-          <h3>Commercial & Residential</h3>
-          <h2>Roofing Services</h2>
-        </TitleGroup>
+        {title && subtitle ? (
+          <TitleGroup>
+            <p>{subtitle}</p>
+            <h2>{title}</h2>
+          </TitleGroup>
+        ) : null}
       </VideoPlayer.Body>
       <PlayerWrapper>
-        <ReactPlayer
-          url="https://www.youtube.com/watch?v=qQAXQ8L6MGM"
-          width="100%"
-          height="100%"
-        />
+        <ReactPlayer url={url} width="100%" height="100%" />
       </PlayerWrapper>
     </VideoPlayer>
   )

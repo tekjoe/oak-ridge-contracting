@@ -55,7 +55,7 @@ export default ({ reverse }) => {
       <Highlight.Body reverse={reverse}>
         <Highlight.Body.Content>
           <TitleGroup>
-            <h3>{reverse ? `Let's Get Started` : `Our Promise`}</h3>
+            <p>{reverse ? `Let's Get Started` : `Our Promise`}</p>
             <h2>
               {reverse ? `Get in Touch` : `We're not happy until you are`}
             </h2>

@@ -66,7 +66,7 @@ export default () => {
     <Advantages>
       <Advantages.Body>
         <TitleGroup>
-          <h3>Advantages</h3>
+          <p>Advantages</p>
           <h2>Our Advantages</h2>
         </TitleGroup>
       </Advantages.Body>
