@@ -36,7 +36,11 @@ const IndexPage = ({ data }) => {
         description="Oak Ridge Contracting is the top home renovation and home remodeling contractor in Waukesha County and Jefferson County. We make your vision a reality."
       />
       <Masthead />
-      <VideoPlayer />
+      <VideoPlayer
+        title="Roofing Services"
+        subtitle="Commercial & Residential"
+        url="https://www.youtube.com/watch?v=qQAXQ8L6MGM"
+      />
       <Projects />
       <Advantages />
       <Highlight reverse={false} />
