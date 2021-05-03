@@ -219,14 +219,13 @@ const ContactPage = () => {
                 </InputGroup>
                 <InputGroup>
                   <label htmlFor="phone">
-                    Your Phone Number (ex. 262-123-4567)
+                    Your Phone Number (ex. 262 123 4567)
                   </label>
                   <Input
                     type="tel"
                     variant="inverse"
                     name="phone"
                     id="phone"
-                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                     required
                     onChange={handleChange}
                   />
