@@ -149,7 +149,7 @@ const ServicesPage = () => {
       <ServicesIntro>
         <ServicesIntro.Content>
           <TitleGroup>
-            <h3>Services</h3>
+            <p>Services</p>
             <h2>Our Services</h2>
           </TitleGroup>
           <p>

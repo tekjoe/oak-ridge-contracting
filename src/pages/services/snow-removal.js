@@ -9,6 +9,7 @@ import ImageSnow from "../../components/atoms/ImageSnow"
 import ImageSnowSalt from "../../components/atoms/ImageSnowSalt"
 import Highlight from "../../components/organisms/Highlight"
 import PhotoGallery from "../../components/organisms/PhotoGallery"
+import VideoPlayer from "../../components/molecules/VideoPlayer"
 
 export const query = graphql`
   query ImagesForSnowRemoval {
@@ -36,6 +37,7 @@ const ServicePage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Snow Removal" />
+      <VideoPlayer url="https://www.youtube.com/watch?v=rI5oJkUeVl8" />
       <Section>
         <TextBlock>
           <h1>Snow Plowing and Snow Removal</h1>

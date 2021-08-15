@@ -76,7 +76,7 @@ export default ({ instagramPosts }) => {
     <Social>
       <Social.Body>
         <TitleGroup>
-          <h3>Social</h3>
+          <p>Social</p>
           <h2>Latest Photos & Videos</h2>
         </TitleGroup>
       </Social.Body>

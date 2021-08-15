@@ -94,7 +94,7 @@ export default () => {
     <Projects>
       <Projects.Body>
         <TitleGroup>
-          <h3>Services</h3>
+          <p>Services</p>
           <h2>Our Work</h2>
         </TitleGroup>
         <p>
