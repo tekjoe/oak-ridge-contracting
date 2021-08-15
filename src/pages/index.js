@@ -42,6 +42,7 @@ const IndexPage = ({ data }) => {
         subtitle="Commercial & Residential"
         url="https://www.youtube.com/watch?v=qQAXQ8L6MGM"
       />
+      <Hiring />
       <Projects />
       <Advantages />
       {/* <Social instagramPosts={data.allInstagramContent.edges} /> */}
