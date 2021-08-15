@@ -68,6 +68,7 @@ ServiceCard.Link = styled(Link)`
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  height: 100%;
   h5 {
     color: #3088da;
     text-transform: uppercase;

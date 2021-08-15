@@ -8,25 +8,26 @@ import Advantages from "../components/organisms/Advantages"
 import Highlight from "../components/organisms/Highlight"
 import Social from "../components/organisms/Social"
 import VideoPlayer from "../components/molecules/VideoPlayer"
+import Hiring from "../components/organisms/Hiring"
 
-export const query = graphql`
-  {
-    allInstagramContent(limit: 4) {
-      edges {
-        node {
-          id
-          localImage {
-            childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid_withWebp
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-`
+// export const query = graphql`
+//   {
+//     allInstagramContent(limit: 4) {
+//       edges {
+//         node {
+//           id
+//           localImage {
+//             childImageSharp {
+//               fluid {
+//                 ...GatsbyImageSharpFluid_withWebp
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// `
 
 const IndexPage = ({ data }) => {
   return (
@@ -37,10 +38,10 @@ const IndexPage = ({ data }) => {
       />
       <Masthead />
       <VideoPlayer />
+      <Hiring />
       <Projects />
       <Advantages />
-      <Highlight reverse={false} />
-      <Social instagramPosts={data.allInstagramContent.edges} />
+      {/* <Social instagramPosts={data.allInstagramContent.edges} /> */}
       <Highlight reverse={true} />
     </Layout>
   )

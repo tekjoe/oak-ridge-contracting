@@ -78,8 +78,9 @@ ServiceCard.Link = styled(Link)`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100% !important;
   padding: 2rem;
-  height: 100%;
+
   h5 {
     color: #3088da;
     text-transform: uppercase;

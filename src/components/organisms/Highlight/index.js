@@ -19,7 +19,6 @@ Highlight.Body = styled.div`
   align-items: flex-start;
   padding: 3rem;
   background: hsl(230, 21%, 23%);
-
   grid-row: ${({ reverse }) => (reverse ? "1" : "auto")};
   p {
     color: white;
