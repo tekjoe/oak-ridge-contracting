@@ -42,7 +42,7 @@ export default () => {
     <Hiring>
       <Hiring.Body>
         <TitleGroup>
-          <h3>We're Hiring</h3>
+          <p>We're Hiring</p>
           <h2>Job Opportunities</h2>
         </TitleGroup>
         <p>Do you have experience working with painters, carpenters, drywallers, etc.? Are you a motivated, highly trainable person? We're looking for someone just like you! For more information about open positions click on the button below.</p>

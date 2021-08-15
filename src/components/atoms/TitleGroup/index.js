@@ -9,7 +9,7 @@ const TitleGroup = styled(motion.div)`
     font-family: "Barlow";
     font-weight: 400;
     padding-bottom: 0.25rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem !important;
     border-bottom: 2px solid #30da92;
     display: inline-block;
     line-height: 1.06;
