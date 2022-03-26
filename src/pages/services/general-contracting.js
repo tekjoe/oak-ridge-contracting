@@ -82,7 +82,6 @@ const ServicePage = ({ data }) => (
           <li>Gutter Installation</li>
           <li>Epoxy Flooring</li>
           <li>Grading and Excavation</li>
-          <li>Landscaping</li>
           <li>Flooring – Tile, Carpet, Hardwood, LVT</li>
           <li>Countertop Replacement and Installation</li>
         </ul>

@@ -82,7 +82,7 @@ export default () => {
             </svg>
           </SVGC>
           <p className="advantage__title">Experience</p>
-          <p>5 years of quality craftsmanship and happy customers</p>
+          <p>8 years of quality craftsmanship and happy customers</p>
         </Advantage>
         <Advantage>
           <SVGC>
@@ -95,7 +95,10 @@ export default () => {
             </svg>
           </SVGC>
           <p className="advantage__title">Reliability</p>
-          <p>We never cut corners or take shortcuts</p>
+          <p>
+            No shortcuts, great communication, and we always stick to our
+            schedule
+          </p>
         </Advantage>
         <Advantage>
           <SVGC>
@@ -108,7 +111,7 @@ export default () => {
             </svg>
           </SVGC>
           <p className="advantage__title">Location</p>
-          <p>Proudly servicing Waukesha County and Jefferson County</p>
+          <p>Proudly servicing Waukesha, Jefferson, and Walworth Counties</p>
         </Advantage>
       </AdvantageGroup>
       <AdvantageGroup>
@@ -124,19 +127,6 @@ export default () => {
           </SVGC>
           <p className="advantage__title">Quality Materials</p>
           <p>We use the best materials for the job at hand</p>
-        </Advantage>
-        <Advantage>
-          <SVGC>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="#3088da"
-            >
-              <path d="M5.33 12.77A4 4 0 1 1 3 5.13V5a4 4 0 0 1 5.71-3.62 3.5 3.5 0 0 1 6.26 1.66 2.5 2.5 0 0 1 2 2.08 4 4 0 1 1-2.7 7.49A5.02 5.02 0 0 1 12 14.58V18l2 1v1H6v-1l2-1v-3l-2.67-2.23zM5 10l3 3v-3H5z" />
-            </svg>
-          </SVGC>
-          <p className="advantage__title">Landscape</p>
-          <p>Awe inspiring landscaping for all types of homes</p>
         </Advantage>
         <Advantage>
           <SVGC>
