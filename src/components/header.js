@@ -9,12 +9,19 @@ const Header = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  z-index: 200; */
   a.active {
     border-bottom: 2px solid #3088da;
     padding-bottom: 0.3rem;
   }
   @media (min-width: 768px) {
-    padding: 1rem 2rem;
+    padding: 1rem 2rem 0;
   }
 `
 
@@ -36,7 +43,7 @@ Logo.Link = styled(Link)`
 
 const Nav = styled.nav`
   display: none;
-  ul {
+  & > ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
@@ -62,8 +69,25 @@ Nav.Link = styled(Link)`
   text-decoration: none;
   color: inherit;
   position: relative;
+  padding-bottom: 0.5rem;
+  &.with-dropdown {
+    &:hover {
+      & + .dropdown {
+        display: flex;
+      }
+    }
+    &:after {
+      content: "\u25BC";
+      color: black;
+      margin-left: 0.25rem;
+    }
+  }
+
   &:hover {
     color: #3088da;
+    &:after {
+      color: #3088da;
+    }
   }
 `
 
@@ -146,11 +170,30 @@ const MobileNav = styled(motion.nav)`
   }
 `
 
+const Dropdown = styled.ul`
+  position: absolute;
+  display: ${({ isShown }) => (isShown ? "flex" : "none")};
+  flex-direction: column;
+  list-style-type: none;
+  top: 3.5rem;
+  gap: 0.75rem;
+  align-items: flex-start;
+  background: white;
+  padding: 0.75rem;
+  z-index: 10;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+  & > li {
+    color: black;
+  }
+`
+
 export default () => {
   const [isToggled, setIsToggled] = useState(false)
+  const [isShown, setIsShown] = useState(false)
   const toggleMenu = () => {
     setIsToggled(!isToggled)
   }
+
   const variants = {
     open: {
       height: "auto",
@@ -196,10 +239,35 @@ export default () => {
               Home
             </Nav.Link>
           </li>
-          <li>
+          <li
+            onMouseEnter={() => setIsShown(true)}
+            onMouseLeave={() => setIsShown(false)}
+          >
             <Nav.Link to="/services" activeClassName="active">
               Services
             </Nav.Link>
+            <Dropdown
+              isShown={isShown}
+              onMouseEnter={() => setIsShown(true)}
+              onMouseLeave={() => setIsShown(false)}
+            >
+              <li>
+                <Nav.Link to="/services/renovations">Renovations</Nav.Link>
+              </li>
+              <li>
+                <Nav.Link to="/services/roofing-siding-and-windows">
+                  Roofing, Siding, and Windows
+                </Nav.Link>
+              </li>
+              <li>
+                <Nav.Link to="/services/general-contracting">
+                  General Contracting
+                </Nav.Link>
+              </li>
+              <li>
+                <Nav.Link to="/services/snow-removal">Snow Removal</Nav.Link>
+              </li>
+            </Dropdown>
           </li>
           <li>
             <Nav.Link to="/about" activeClassName="active">

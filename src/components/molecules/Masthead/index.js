@@ -10,6 +10,7 @@ const Masthead = styled.section`
   @media (min-width: 768px) {
     grid-template-rows: repeat(12, 1fr);
     height: 650px;
+    padding-top: 1rem;
   }
   @media (min-width: 1024) {
     height: 800px;
