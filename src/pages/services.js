@@ -65,7 +65,7 @@ ServiceCard.Link = styled(Link)`
   background: #f0f0f0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding: 2rem;
   height: 100%;
@@ -79,6 +79,7 @@ ServiceCard.Link = styled(Link)`
   }
   h4 {
     margin-bottom: 1.25rem;
+    text-align: center;
   }
   p {
     font-weight: 500;
@@ -230,6 +231,42 @@ const ServicesPage = () => {
           </ServiceCard.Link>
         </ServiceCard>
 
+        <ServiceCard variants={item}>
+          <ServiceCard.Link to="/services/design">
+            <ServiceCard.Icon>
+              <SVGC>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="#fff"
+                >
+                  <path d="M16.88 9.1A4 4 0 0 1 16 17H5a5 5 0 0 1-1-9.9V7a3 3 0 0 1 4.52-2.59A4.98 4.98 0 0 1 17 8c0 .38-.04.74-.12 1.1z" />
+                </svg>
+              </SVGC>
+            </ServiceCard.Icon>
+            <ServiceCard.Line />
+            <h5>Services</h5>
+            <h4>Design & 3D Rendering</h4>
+          </ServiceCard.Link>
+        </ServiceCard>
+        <ServiceCard variants={item}>
+          <ServiceCard.Link to="/services/farm-and-ranch">
+            <ServiceCard.Icon>
+              <SVGC>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="#fff"
+                >
+                  <path d="M16.88 9.1A4 4 0 0 1 16 17H5a5 5 0 0 1-1-9.9V7a3 3 0 0 1 4.52-2.59A4.98 4.98 0 0 1 17 8c0 .38-.04.74-.12 1.1z" />
+                </svg>
+              </SVGC>
+            </ServiceCard.Icon>
+            <ServiceCard.Line />
+            <h5>Services</h5>
+            <h4>Farm & Ranch</h4>
+          </ServiceCard.Link>
+        </ServiceCard>
         <ServiceCard variants={item}>
           <ServiceCard.Link to="/services/snow-removal">
             <ServiceCard.Icon>

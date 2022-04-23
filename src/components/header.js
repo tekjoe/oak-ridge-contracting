@@ -267,6 +267,12 @@ export default () => {
               <li>
                 <Nav.Link to="/services/snow-removal">Snow Removal</Nav.Link>
               </li>
+              <li>
+                <Nav.Link to="/services/design">Design & 3D Rendering</Nav.Link>
+              </li>
+              <li>
+                <Nav.Link to="/services/farm-and-ranch">Farm & Ranch</Nav.Link>
+              </li>
             </Dropdown>
           </li>
           <li>
