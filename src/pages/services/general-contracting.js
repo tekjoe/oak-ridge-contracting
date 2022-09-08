@@ -39,20 +39,17 @@ const ServicePage = ({ data }) => (
       <TextBlock>
         <h1>General Contracting</h1>
         <p>
-          At Oak Ridge Contracting, we pride ourselves on providing outstanding
-          customer service to Waukesha County and surrounding areas. We work
-          hard to keep all of our projects on time and under budget. All of our
-          contracting services are customizable to your specific needs.
+          Oak Ridge Contracting is leading the way when it comes to professional
+          general contracting services in Southeastern Wisconsin. We pride
+          ourselves on providing outstanding customer service, communication,
+          friendliness, and work hard to keep all our projects on time and under
+          budget. All our contracting services are customizable to your specific
+          needs.
         </p>
-        <blockquote>
-          As a local business in Waukesha County, we understand the importance
-          of communication and friendliness.
-        </blockquote>
         <p>
-          We are highly qualified and are dedicated to providing you with
-          excellent worksmanship. No job is too big or small – we treat every
-          project with the utmost respect. We know how important your home is to
-          you, that's why we treat it as if it were our own.
+          Oak Ridge Contracting's team of skilled professionals aim to transform
+          your vision into a reality. We work with each homeowner or business
+          owner to enhance the quality and value of their property.
         </p>
       </TextBlock>
       <ImageGroup>
@@ -66,9 +63,9 @@ const ServicePage = ({ data }) => (
       <TextBlock>
         <h2>Contracting Services</h2>
         <p>
-          We have the goal to be a one-stop-shop for all of our customers at
-          every step of a project. Our team of contractors are experienced in
-          the fields of:
+          We have the goal to be a one-stop-shop for all our customers at every
+          step of a project. Our team of subcontractors are experienced in the
+          fields of:
         </p>
         <ul>
           <li>Architectural and Design Services</li>
@@ -82,8 +79,10 @@ const ServicePage = ({ data }) => (
           <li>Gutter Installation</li>
           <li>Epoxy Flooring</li>
           <li>Grading and Excavation</li>
-          <li>Flooring – Tile, Carpet, Hardwood, LVT</li>
+          <li>Flooring – Tile, Carpet, Hardwood, LVP</li>
+          <li>Tile Showers</li>
           <li>Countertop Replacement and Installation</li>
+          <li>Spray Foam Insulation</li>
         </ul>
       </TextBlock>
     </Section>

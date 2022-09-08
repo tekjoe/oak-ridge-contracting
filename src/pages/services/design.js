@@ -35,6 +35,20 @@ const ServicePage = ({ data }) => (
     <Section>
       <TextBlock>
         <h1>Design & 3D Rendering</h1>
+        <p>Choosing to work with our in-house designer ensures:</p>
+        <ul>
+          <li>Accuracy</li>
+          <li>Clear communication</li>
+          <li>Precise measurements</li>
+          <li>Saved time and energy</li>
+          <li>Best end results achieved for your project</li>
+        </ul>
+        <p>
+          You will have one-on-one meetings to discuss your vision. Our design
+          services include 3D renderings, hand-picked selections, and design
+          selection boards. These items are key to visualizing your project
+          before it begins and a smooth process.
+        </p>
       </TextBlock>
     </Section>
     <PhotoGallery data={data} />

@@ -37,26 +37,25 @@ const ServicePage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Snow Removal" />
-      <VideoPlayer url="https://www.youtube.com/watch?v=rI5oJkUeVl8" />
-      <Section>
-        <TextBlock>
+      <Section style={{ marginBottom: 0 }}>
+        <TextBlock style={{ marginBottom: 0 }}>
           <h1>Snow Plowing and Snow Removal</h1>
           <p>
             Oak Ridge Contracting provides reliable, efficient, and safe snow
-            services in southeastern Wisconsin. We remain available 24 hours
-            hours a day, 7 days a week for snow and ice removal during the
-            winter season. We monitor each and every snowfall very closely to
-            ensure that our crew is ready to go and is on-site when necessary.
+            Oak Ridge Contracting provides reliable, efficient, and safe snow
+            services in southeastern Wisconsin. We remain available 24 hours a
+            day, 7 days a week for snow removal and ice management during the
+            winter season. We monitor each snow event very closely to ensure
+            that our crew is ready to go and is on-site when necessary.
           </p>
-          <blockquote>
-            We offer complimentary estimates for snow removal and ice
-            management.
-          </blockquote>
           <p>
             We take pride in keeping all of our accounts clean before, during,
             and after every winter storm.
           </p>
         </TextBlock>
+      </Section>
+      <VideoPlayer url="https://www.youtube.com/watch?v=rI5oJkUeVl8" />
+      <Section>
         <ImageGroup>
           <ImageGroup.Image>
             <ImageSnow style={{ height: `100%` }} />
@@ -69,9 +68,8 @@ const ServicePage = ({ data }) => {
           <h2>Snow Removal and Ice Removal Services</h2>
           <ul>
             <li>Commercial and residential snow plowing</li>
-            <li>Sidewalk snow removal</li>
-            <li>Salting of lots and sidewalks</li>
-            <li>Sidewalk crew</li>
+            <li>Commercial and residential salting</li>
+            <li>Sidewalk snow removal and salting</li>
           </ul>
         </TextBlock>
       </Section>

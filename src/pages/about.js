@@ -81,7 +81,7 @@ const AboutPage = () => (
     <AboutSection>
       <AboutSection.Body>
         <TitleGroup>
-          <h3>About</h3>
+          <p>About</p>
           <h2>Oak Ridge Contracting</h2>
         </TitleGroup>
         <p>
@@ -97,21 +97,20 @@ const AboutPage = () => (
         <Image style={{ width: "100%", height: "100%" }} />
       </AboutSection.FullwidthImage>
       <TextBlock>
-        <h1>Our company's history</h1>
+        <h2>Our Commitment</h2>
         <p>
-          In 2015, we began with a vision of a construction company that treated
-          all of its customers like family. We believe in being honest with our
-          customers at every stage of a project.
+          The decision to add on, restore, or remodel your home or other
+          building is no small task. We truly believe that our attention to
+          detail and passion for craftsmanship sets us apart from our
+          competitors. Our commitment to the most professional standards means
+          that we stand behind everything we do from start to finish.
         </p>
-        <blockquote>
-          If our customers ever have questions, we urge them to let us know! We
-          keep all lines of communication open during our projects.
-        </blockquote>
+        <h2>Fully Licensed</h2>
         <p>
-          Oakridge Contracting delivers professional services to residential and
-          commercial properties at reasonable and affordable prices. We're
-          dedicated to customer service and satisfaction, so we're not happy
-          until you are.
+          Oak Ridge Contracting is a licensed dwelling contractor, lead safe
+          certified contractor and fully insured. Having all the right licenses
+          and permits helps ensure that all the proper steps are taken for our
+          customers project to run efficiently.
         </p>
       </TextBlock>
       <ImageGroup>
@@ -122,22 +121,6 @@ const AboutPage = () => (
           <ImageTeam style={{ height: "100%" }} />
         </ImageGroup.Image>
       </ImageGroup>
-      <TextBlock>
-        <h2>Our Commitment</h2>
-        <p>
-          The decision to add on, restore, or remodel your home or other
-          building is no small task. We truly believe that our attention to
-          detail and passion for craftsmanship set us apart from our
-          competitors. Our commitment to the most professional standards means
-          that we stand behind everything we do from start to finish.
-        </p>
-        <h2>Fully Licensed</h2>
-        <p>
-          Having all the right licenses and permits ensures that a project can
-          go smoothly. We are proud to be a licensed dwelling contractor, US DOT
-          certified business, and lead safe certified contractor.
-        </p>
-      </TextBlock>
     </AboutSection>
     {/* <StatsGrid>
       <StatsGrid.Stat>

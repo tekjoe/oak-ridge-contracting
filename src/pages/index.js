@@ -40,7 +40,7 @@ const IndexPage = ({ data }) => {
       <VideoPlayer
         title="Roofing Services"
         subtitle="Commercial & Residential"
-        url="https://www.youtube.com/watch?v=qQAXQ8L6MGM"
+        url="https://www.youtube.com/watch?v=YvcKNxkkinw"
       />
       <Hiring />
       <Projects />
