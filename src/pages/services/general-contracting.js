@@ -40,7 +40,7 @@ const ServicePage = ({ data }) => (
         <h1>General Contracting</h1>
         <p>
           Oak Ridge Contracting is leading the way when it comes to professional
-          general contracting services in Southeastern Wisconsin. We pride
+          general contracting services in southeastern Wisconsin. We pride
           ourselves on providing outstanding customer service, communication,
           friendliness, and work hard to keep all our projects on time and under
           budget. All our contracting services are customizable to your specific

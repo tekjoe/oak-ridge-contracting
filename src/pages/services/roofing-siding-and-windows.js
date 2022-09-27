@@ -44,19 +44,11 @@ const ServicePage = ({ data }) => (
       <TextBlock>
         <h1>Roofing, Siding, and Windows</h1>
         <p>
-          Oak Ridge Contracting's team of professional contractors in Waukesha
-          and Jefferson County aim to transform your vision into a reality. We
-          work with each and every homeowner or business owner to increase the
-          quality and value of their property.
-        </p>
-        <blockquote>
-          No matter what your budget or deadline is, we will satisfy your needs.
-        </blockquote>
-        <p>
-          We are highly qualified and are dedicated to providing you with
-          excellent worksmanship. No job is too big or small – we treat every
-          project with the utmost respect. We know how important your home is to
-          you, that's why we treat it as if it were our own.
+          We are committed to providing each customer with a wide range of
+          products and information they need to make the correct choice that
+          will fit their needs. Our goal is to provide you with the best
+          high-quality products and materials that add value and efficiency to
+          your home or business.
         </p>
       </TextBlock>
       <ImageGroup>
@@ -69,19 +61,13 @@ const ServicePage = ({ data }) => (
       </ImageGroup>
       <TextBlock>
         <h2>Roofing Replacement & Installation</h2>
-        <p>
-          Our team of professional roofing contractors in Waukesha and Jefferson
-          County are experienced at roof repair, roof replacement, and new roof
-          construction. Our goal is to provide you with the best roofing
-          products given your budget. We are dedicated to providing you with a
-          roof that protects your property throughout the entire year. We offer:
-        </p>
+        <p>We use all CertainTeed roofing products and accessories!</p>
         <ul>
           <li>Roof Repair</li>
           <li>Roof Replacement</li>
           <li>New Roof Construction</li>
         </ul>
-        <h2>Siding Replacment & Installation</h2>
+        <h2>Siding Replacement & Installation</h2>
         <p>
           Our team of siding professionals offers everything from siding repair
           to replacement in Waukesha and Jefferson County. We offer high quality
@@ -101,7 +87,7 @@ const ServicePage = ({ data }) => (
           <li>LP SmartSide</li>
           <li>Cedar Siding</li>
         </ul>
-        <h2>Widow Replacment & Installation</h2>
+        <h2>Widow Replacement & Installation</h2>
         <p>
           We have years of experience helping homeowners in Waukesha and
           Jefferson counties enjoy new windows that are easy to clean and
