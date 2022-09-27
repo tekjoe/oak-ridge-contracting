@@ -39,32 +39,22 @@ const ServicePage = ({ data }) => {
       <SEO title="Snow Removal" />
       <Section style={{ marginBottom: 0 }}>
         <TextBlock style={{ marginBottom: 0 }}>
-          <h1>Snow Plowing and Snow Removal</h1>
+          <h1>Snow Removal and Ice Management</h1>
           <p>
             Oak Ridge Contracting provides reliable, efficient, and safe snow
             services in southeastern Wisconsin. We remain available 24 hours a
             day, 7 days a week for snow removal and ice management during the
             winter season. We monitor each snow event very closely to ensure
-            that our crew is ready to go and is on-site when necessary.
-          </p>
-          <p>
-            We take pride in keeping all of our accounts clean before, during,
-            and after every winter storm.
+            that our crew is ready to go and is on-site when necessary. We take
+            pride in keeping all our accounts clean before, during, and after
+            every winter storm.
           </p>
         </TextBlock>
       </Section>
       <VideoPlayer url="https://www.youtube.com/watch?v=rI5oJkUeVl8" />
       <Section>
-        <ImageGroup>
-          <ImageGroup.Image>
-            <ImageSnow style={{ height: `100%` }} />
-          </ImageGroup.Image>
-          <ImageGroup.Image>
-            <ImageSnowSalt style={{ height: `100%` }} />
-          </ImageGroup.Image>
-        </ImageGroup>
         <TextBlock>
-          <h2>Snow Removal and Ice Removal Services</h2>
+          <h2>Snow Plowing and Salting Services</h2>
           <ul>
             <li>Commercial and residential snow plowing</li>
             <li>Commercial and residential salting</li>

@@ -37,12 +37,12 @@ export const query = graphql`
 const ServicePage = ({ data }) => (
   <Layout>
     <SEO
-      title="Roofing, Siding, and Window Contractor in Waukesha County"
-      description="Waukesha County and Jefferson County's top roofing, siding, and window services. Repair, replacement, and installation - no job is too big or too small."
+      title="Roofing, Siding, Window, & Door Contractor in Waukesha County"
+      description="Waukesha County and Jefferson County's top roofing, siding, window, and door services. Repair, replacement, and installation - no job is too big or too small."
     />
     <Section>
       <TextBlock>
-        <h1>Roofing, Siding, and Windows</h1>
+        <h1>Roofing, Siding, Windows, & Doors</h1>
         <p>
           We are committed to providing each customer with a wide range of
           products and information they need to make the correct choice that
@@ -68,32 +68,29 @@ const ServicePage = ({ data }) => (
           <li>New Roof Construction</li>
         </ul>
         <h2>Siding Replacement & Installation</h2>
-        <p>
-          Our team of siding professionals offers everything from siding repair
-          to replacement in Waukesha and Jefferson County. We offer high quality
-          products and materials that add value and efficiency to your home or
-          business.
-        </p>
-        <p>
-          As one of the area's top siding contractors, we offer a wide range of
-          products and provide each and every customer with the information they
-          need to make the correct choice that will fit their budget. We offer:
-        </p>
         <ul>
           <li>Siding Installation</li>
           <li>Siding Repair</li>
           <li>Siding Replacement</li>
           <li>Vinyl Siding</li>
-          <li>LP SmartSide</li>
+          <li>Insulated Vinyl Siding</li>
           <li>Cedar Siding</li>
+          <li>LP SmartSide</li>
+          <li>Hardie Board</li>
         </ul>
-        <h2>Widow Replacement & Installation</h2>
+        <h2>Window and Door Replacement & Installation</h2>
         <p>
-          We have years of experience helping homeowners in Waukesha and
-          Jefferson counties enjoy new windows that are easy to clean and
-          maintain. New windows not only provide better energy efficiency, but
-          they can also improve the safety and security of your home.
+          New windows and doors increase your home or business value, improve
+          safety and security, enhance curb appeal, are easy to clean/low
+          maintenance and noise reduction.
         </p>
+        <ul>
+          <li>Andersen Windows and Doors</li>
+          <li>Marvin Windows and Doors</li>
+          <li>Simonton Windows and Doors</li>
+          <li>ThermaTru Doors</li>
+          <li>Larson Doors</li>
+        </ul>
       </TextBlock>
     </Section>
     <PhotoGallery data={data} />

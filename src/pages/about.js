@@ -85,12 +85,14 @@ const AboutPage = () => (
           <h2>Oak Ridge Contracting</h2>
         </TitleGroup>
         <p>
-          When it comes to residential and commercial remodeling in southeastern
-          Wisconsin, Oakridge Contracting is the name to know. Since 2015, we've
-          provided outstanding, fully licensed building and construction
-          remodeling services. We also specialize in residential and commercial
-          snow removal so you can feel safe before, during, and after any winter
-          storm.
+          When it comes to residential and commercial remodeling in Southeastern
+          Wisconsin, Oak Ridge Contracting is the name to know. In 2015, we
+          began with a vision of a construction and snow removal company that
+          would provide outstanding, professional services to residential and
+          commercial properties. We believe in treating all our customers like
+          family and being honest with our customers at every stage of a
+          project. We are dedicated to customer service and satisfaction, so
+          we're not happy until you are.
         </p>
       </AboutSection.Body>
       <AboutSection.FullwidthImage>
@@ -121,25 +123,16 @@ const AboutPage = () => (
           <ImageTeam style={{ height: "100%" }} />
         </ImageGroup.Image>
       </ImageGroup>
+      <TextBlock>
+        <h2>Our Work</h2>
+        <p>
+          We're a team of trustworthy, hardworking, and friendly people who
+          never compromise. We work hard to ensure that every project goes above
+          and beyond your expectations. We are always learning, growing, and
+          keeping up with the trends.
+        </p>
+      </TextBlock>
     </AboutSection>
-    {/* <StatsGrid>
-      <StatsGrid.Stat>
-        <h4>5</h4>
-        <p>years serving southeastern Wisconsin</p>
-      </StatsGrid.Stat>
-      <StatsGrid.Stat>
-        <h4>240+</h4>
-        <p>something something something something</p>
-      </StatsGrid.Stat>
-      <StatsGrid.Stat>
-        <h4>35</h4>
-        <p>happy customers who something something</p>
-      </StatsGrid.Stat>
-      <StatsGrid.Stat>
-        <h4>16</h4>
-        <p>something something something something</p>
-      </StatsGrid.Stat>
-    </StatsGrid> */}
     <Highlight reverse={true} />
   </Layout>
 )
